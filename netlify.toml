@@ -1,0 +1,46 @@
+
+# [build]
+#   command = "npm run export"
+#   publish = "_sapper/_export"
+#   NODE_ENV = "10.18.1"
+
+
+# [dev]
+#   command = "npm run dev"
+
+
+# [[redirects]]
+#   from = "https://musikversicherung.netlify.app"
+#   to = "https://musikversicherung.com/:splat"
+#   status = 301
+
+
+[[redirects]]
+  from = "/images/tiny/*"
+  to = "https://musikversicherung.netlify.app/images/:splat?nf_resize=fit&w=20"
+  status = 302
+
+[[redirects]]
+  from = "/images/small/*"
+  to = "https://musikversicherung.netlify.app/images/:splat?nf_resize=fit&w=500"
+  status = 302
+
+[[redirects]]
+  from = "/images/medium/*"
+  to = "https://musikversicherung.netlify.app/images/:splat?nf_resize=fit&w=900"
+  status = 302
+
+[[redirects]]
+  from = "/images/large/*"
+  to = "https://musikversicherung.netlify.app/images/:splat?nf_resize=fit&w=1200"
+  status = 302
+
+[[redirects]]
+  from = "/images/original/*"
+  to = "https://musikversicherung.netlify.app/images/:splat"
+  status = 302
+
+[[redirects]]
+  from = "/*"
+  to = "/404/index.html"
+  status = 404 
