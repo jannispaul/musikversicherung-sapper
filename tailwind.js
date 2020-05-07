@@ -4,6 +4,7 @@ module.exports = {
     // `__sapper__/export/*/*.js`,
     // `__sapper__/export/*/*/*.js`,
     // `__sapper__/export/**`,
+    // purge: [`_sapp/*.css`],
     `__sapper__/export/*.*`,
     `__sapper__/export/**/*.*`,
     `__sapper__/export/**/**/*.*`,
