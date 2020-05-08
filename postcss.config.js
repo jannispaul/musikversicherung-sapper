@@ -18,5 +18,8 @@ module.exports = {
 
     // only needed if you want to purge
     ...(process.env.NODE_ENV === "production" ? [purgecss] : []),
+    require("cssnano")({
+      preset: "advanced",
+    }),
   ],
 };
