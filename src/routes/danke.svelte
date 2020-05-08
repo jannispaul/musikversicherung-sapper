@@ -6,11 +6,12 @@
   <meta name="robots" content="noindex" />
 </svelte:head>
 <Layout>
-  <section class="px-x1p5 mb-x1 text-x0p75" id="main">
+  <section class="px-x1p5 mb-x1 text-x2 md:text-x0p75" id="main">
     <div class="grid md:grid-cols-2 gap-x2 md:gap-x1">
       <div>
         <h1
-          class="text-primary text-x3 leading-tight md:text-x2 mb-x1 md:mb-x0p5">
+          class="text-primary text-x3 leading-tight md:text-x1p5 mb-x1
+          md:mb-x0p5">
           Vielen Dank für Deine Anfrage
         </h1>
         <p>
@@ -25,7 +26,8 @@
       </div>
       <div>
         <h2
-          class="text-primary mb-x1 text-x3 md:text-x2 leading-tight md:mb-x0p5">
+          class="text-primary mb-x1 text-x3 md:text-x1p5 leading-tight
+          md:mb-x0p5">
           Was passiert als nächstes?
         </h2>
         Anschließend sende ich Dir ein individuelles Angebot per Mail zu. Nimm

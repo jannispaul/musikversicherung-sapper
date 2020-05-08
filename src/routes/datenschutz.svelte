@@ -7,8 +7,8 @@
 </svelte:head>
 
 <Layout>
-  <section class="p-x1p5 mb-x1 text-x0p75">
-    <h1 class="text-primary text-x6 mb-x3">Datenschutz</h1>
+  <section class="px-x1p5 mb-x1 text-x2 md:text-x0p75">
+    <h1 class="text-primary text-x6 md:text-x3 mb-x1 ">Datenschutz</h1>
 
     <div>
 
