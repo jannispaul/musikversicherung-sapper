@@ -1,6 +1,6 @@
 [build]
   command = "npm run export"
-  publish = "_sapper/_export"
+  publish = "__sapper__/export"
   NODE_ENV = "10.18.1"
 
 
