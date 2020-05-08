@@ -1,5 +1,6 @@
 [build]
-  command = "npm run export"
+  # command = "npm run export"
+  command = "npm run build:tailwind && sapper export --legacy"
   publish = "__sapper__/export"
   NODE_ENV = "10.18.1"
 
