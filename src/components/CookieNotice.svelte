@@ -56,7 +56,7 @@
     </p>
     <button
       on:click={acceptCookies}
-      class="w-full md:w-auto bg-primary p-x0p25 text-light">
+      class="w-full md:w-auto bg-primary px-x0p25 py-x0p5 md:p-x0p25 text-light">
       Verstanden!
     </button>
   </div>

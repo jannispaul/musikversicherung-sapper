@@ -73,7 +73,7 @@
   }
 </style>
 
-<header class="w-full z-10 top-0 sticky">
+<header class="w-full z-50 top-0 sticky">
   <a
     href="#main"
     class="skip-to-main absolute z-0 w-1 h-1 overflow-hidden text-x2 md:text-x1">
