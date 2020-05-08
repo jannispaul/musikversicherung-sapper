@@ -7,7 +7,7 @@
     "build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
     "build": "npm run build:tailwind && sapper build --legacy",
     "dev": "sapper dev",
-    "export": "npm run build:tailwind && sapper export --legacy --entry '/ /danke /neue-bewertung /404'",
+    "export": "npm run build:tailwind && sapper export --legacy --entry '/ /danke /neue-bewertung /bewertung-erfolgreich /404'",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",

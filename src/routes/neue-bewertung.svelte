@@ -52,14 +52,17 @@
 </style>
 
 <Layout>
-  <div class="text-x2 md:text-x1 lg:text-x0p5 px-x1p5 md:grid grid-cols-2">
-    <h1 class="text-x4 md:text-x2 text-primary mb-x2 md:mb-x0p5 md:mt-x2">
+  <div
+    class="text-x2 md:text-x1 lg:text-x0p5 px-x1p5 md:grid grid-cols-2 md:-mt-x1">
+    <h1
+      class="text-x4 md:text-x2 text-primary mb-x1 font-medium md:h-100
+      md:text-light md:flex md:items-center md:text-center md:bg-primary">
       Ich freue mich über Deine Bewertung!
     </h1>
     <form
       class="flex flex-col md:p-x1"
       method="POST"
-      action="https://mystaticman.herokuapp.com/v3/entry/github/jannispaul/musikversicherung/master/src/reviews">
+      action="https://mystaticman.herokuapp.com/v3/entry/github/jannispaul/musikversicherung/master/reviews">
       <input
         type="hidden"
         name="options[redirect]"
@@ -73,13 +76,12 @@
           <svg
             width="32px"
             height="32px"
-            viewBox="0 0 48 48"
+            viewBox="0 0 20 20"
             style="vertical-align: middle;"
             fill="#6B46C1">
             <path
-              d="M24 36.5681L10.3662 44.831L13.9812 29.338L2 18.9061L17.8028
-              17.5634L24 3L30.1972 17.5634L46 18.9061L34.0188 29.338L37.6338
-              44.831L24 36.5681Z" />
+              d="M.476 6.952l7.159-.178L9.955 0l2.382 6.754 7.16.114-5.687 4.351
+              2.104 6.845L10.018 14l-5.86 4.116 2.043-6.863z" />
           </svg>
           <input
             type="radio"
@@ -98,13 +100,12 @@
             <svg
               width="32px"
               height="32px"
-              viewBox="0 0 48 48"
+              viewBox="0 0 20 20"
               style="vertical-align: middle;"
               fill={rating >= 2 ? '#6B46C1' : 'gray'}>
               <path
-                d="M24 36.5681L10.3662 44.831L13.9812 29.338L2 18.9061L17.8028
-                17.5634L24 3L30.1972 17.5634L46 18.9061L34.0188 29.338L37.6338
-                44.831L24 36.5681Z" />
+                d="M.476 6.952l7.159-.178L9.955 0l2.382 6.754 7.16.114-5.687
+                4.351 2.104 6.845L10.018 14l-5.86 4.116 2.043-6.863z" />
             </svg>
           </div>
 
@@ -126,13 +127,12 @@
             <svg
               width="32px"
               height="32px"
-              viewBox="0 0 48 48"
+              viewBox="0 0 20 20"
               style="vertical-align: middle;"
               fill={rating >= 3 ? '#6B46C1' : 'gray'}>
               <path
-                d="M24 36.5681L10.3662 44.831L13.9812 29.338L2 18.9061L17.8028
-                17.5634L24 3L30.1972 17.5634L46 18.9061L34.0188 29.338L37.6338
-                44.831L24 36.5681Z" />
+                d="M.476 6.952l7.159-.178L9.955 0l2.382 6.754 7.16.114-5.687
+                4.351 2.104 6.845L10.018 14l-5.86 4.116 2.043-6.863z" />
             </svg>
           </div>
           <input
@@ -153,14 +153,13 @@
             <svg
               width="32px"
               height="32px"
-              viewBox="0 0 48 48"
+              viewBox="0 0 20 20"
               style="vertical-align: middle;"
               fill={rating >= 4 ? '#6B46C1' : 'gray'}>
 
               <path
-                d="M24 36.5681L10.3662 44.831L13.9812 29.338L2 18.9061L17.8028
-                17.5634L24 3L30.1972 17.5634L46 18.9061L34.0188 29.338L37.6338
-                44.831L24 36.5681Z" />
+                d="M.476 6.952l7.159-.178L9.955 0l2.382 6.754 7.16.114-5.687
+                4.351 2.104 6.845L10.018 14l-5.86 4.116 2.043-6.863z" />
             </svg>
           </div>
           <input
@@ -180,14 +179,13 @@
             <svg
               width="32px"
               height="32px"
-              viewBox="0 0 48 48"
+              viewBox="0 0 20 20"
               style="vertical-align: middle;"
               fill={rating >= 5 ? '#6B46C1' : 'gray'}>
 
               <path
-                d="M24 36.5681L10.3662 44.831L13.9812 29.338L2 18.9061L17.8028
-                17.5634L24 3L30.1972 17.5634L46 18.9061L34.0188 29.338L37.6338
-                44.831L24 36.5681Z" />
+                d="M.476 6.952l7.159-.178L9.955 0l2.382 6.754 7.16.114-5.687
+                4.351 2.104 6.845L10.018 14l-5.86 4.116 2.043-6.863z" />
             </svg>
           </div>
           <input
@@ -211,7 +209,7 @@
           class="" />
       </label>
 
-      <label class="inline-flex flex-col mb-x0p5 md:mb-x1">
+      <label class="inline-flex flex-col mb-x0p5 md:mb-x0p25">
         <span>Deine Rezension</span>
         <textarea name="fields[review]" rows="4" required class="" />
       </label>
