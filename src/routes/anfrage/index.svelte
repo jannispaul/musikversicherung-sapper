@@ -598,6 +598,8 @@
                   <span>Nein</span>
                 </label>
               </div>
+            {/if}
+            {#if $formData.bewohnt === 'nein'}
               <label class="inline-flex flex-col justify-end w-full mb-x1">
                 Bitte beschreibe kurz die Örtlichkeit und Sicherungen des
                 Proberaums *
@@ -608,6 +610,7 @@
                   class="w-full border-primary" />
               </label>
             {/if}
+
             <div class="inline flex flex-wrap md:items-stretch toggle">
               <span class="w-full flex-0">
                 Wird das Equipment in einem Anhänger transportiert / gelagert? *
