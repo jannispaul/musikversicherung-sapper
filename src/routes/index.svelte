@@ -39,7 +39,13 @@
 </script>
 
 <svelte:head>
-  <title>Musikversicherung.com</title>
+  <title>Instrumentenversicherung SINFONIMA & I'M SOUND</title>
+  <meta
+    name="description"
+    content="SINFONIMA-Instrumentenversicherung & I'M
+    SOUND-Equipmentversicherung - bester Allgefahrenschutz für klassische
+    Instrumente und elektronisches Equipment" />
+
 </svelte:head>
 <Layout>
   <Hero {reviewData} />

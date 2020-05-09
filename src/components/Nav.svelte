@@ -128,6 +128,14 @@
             </a>
             <a
               rel="prefetch"
+              class:active={segment === 'schaden-melden'}
+              href="schaden-melden"
+              class="block mt-4 md:inline-block md:mt-0 text-primary
+              hover:text-primary mr-x0p5">
+              Schaden melden
+            </a>
+            <a
+              rel="prefetch"
               class:active={segment === 'kontakt'}
               href="kontakt"
               class="block mt-4 md:inline-block md:mt-0 text-primary
