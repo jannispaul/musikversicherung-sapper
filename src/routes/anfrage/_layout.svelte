@@ -2,9 +2,9 @@
   #main:focus {
     outline: 0;
   }
-  :global(body) {
+  /* :global(body) {
     background: #f8f5ff;
-  }
+  } */
   /* @media (min-width: 500px) {
     header {
       display: flex;
