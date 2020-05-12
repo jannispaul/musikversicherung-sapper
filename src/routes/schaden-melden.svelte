@@ -86,16 +86,6 @@
     );
   });
 
-  // Setup function to add an Instrument
-  // function addInstrument() {
-  //   const instrument = {
-  //     name: "",
-  //     valueType: "Neuwert",
-  //     value: ""
-  //   };
-  //   $schadenFormData.instruments = [...$schadenFormData.instruments, instrument];
-  // }
-
   // Send data to integromat webhook, clear schadenFormData from localstorage, and redirect on submit
   async function handleSubmit() {
     // Confige fetch request options
@@ -316,7 +306,7 @@
             </label>
           </div>
 
-          <FileUpload bind:value={$schadenFormData.files}>
+          <FileUpload bind:files={$schadenFormData.files}>
             Wenn schon eine Rechnung vorliegt, können Sie diese hier hochladen.
             Wenn Sie noch weitere Unterlagen (Fotos, Kostenvoranschlag oder
             ähnliches) beifügen wollen, können Sie das hier tun:
