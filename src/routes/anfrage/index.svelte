@@ -112,9 +112,8 @@
   }
   :global(.primary-button),
   .add-instrument {
-    margin-top: 3vw;
     background: rgba(107, 70, 193, 0.15);
-    padding: 1.5vw;
+    padding: 1.6vw 1.5vw 1.5vw 1.5vw;
   }
 
   :global(.primary-button:hover:not(:disabled)),
@@ -236,11 +235,6 @@
       border: 0.2vw solid #6b46c1;
     }
 
-    :global(.primary-button) {
-      margin-top: 3vw;
-      /* background: none; */
-      padding: 1.5vw;
-    }
     .primary-button:hover:not(:disabled) {
       /* background: rgba(107, 70, 193, 0.3); */
       /* background: none; */

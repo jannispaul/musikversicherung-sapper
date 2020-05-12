@@ -15,6 +15,9 @@
   // Create store
   let schadenFormData = writable({});
 
+  $: {
+    console.log($schadenFormData);
+  }
   $: errors = {
     tab1:
       !$schadenFormData.vorname ||
@@ -70,8 +73,7 @@
           kontoinhaber: undefined,
           iban: undefined,
           bank: undefined,
-          files: undefined
-          // rechnungen: [{ name: "", valueType: "Neuwert", value: "" }]
+          files: []
         }
       );
     }
@@ -119,151 +121,6 @@
     window.location.href = "/danke/";
   }
 </script>
-
-<style>
-  #form:focus {
-    outline: 0;
-  }
-  :global(.primary-button),
-  .add-instrument {
-    margin-top: 3vw;
-    background: rgba(107, 70, 193, 0.15);
-    padding: 1.5vw;
-  }
-
-  :global(.primary-button:hover:not(:disabled)),
-  :global(.add-instrument:hover:not(:disabled)) {
-    background: rgba(107, 70, 193, 0.3);
-  }
-  :global(button:not(:disabled)) {
-    cursor: pointer;
-  }
-  :global(button:disabled) {
-    cursor: not-allowed;
-  }
-
-  :disabled {
-    opacity: 0.5;
-  }
-
-  /* Input style */
-  :global(input[type="radio"]) {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-  }
-
-  :global(input) {
-    height: 5vw;
-    min-height: fit-content;
-    padding: 1.5vw;
-    margin-bottom: 2vw;
-    background: white;
-    border: 0.2vw solid #6b46c1;
-  }
-  :global(textarea) {
-    padding: 1.5vw;
-    border: 0.2vw solid #6b46c1;
-  }
-  :global(select) {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-position: right 1vw top 50%;
-    background-repeat: no-repeat;
-    background-size: 2vw;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDZMNS42NTcuMzQzIDExLjMxNCA2SDB6bTAgMmw1LjY1NyA1LjY1N0wxMS4zMTQgOEgweiIgZmlsbD0iIzMzMyIvPjwvc3ZnPg==);
-    background-color: white;
-    height: 5vw;
-    min-height: fit-content;
-    padding: 1vw 1.5vw;
-    margin-bottom: 2vw;
-    border: 0.2vw solid #6b46c1;
-    border-radius: 0;
-  }
-
-  :global(.toggle > label) {
-    border: 0.5vw solid #6b46c1;
-    opacity: 0.5;
-    cursor: pointer;
-    position: relative;
-  }
-  /* .toggle > input:focus ~ label { */
-  /* outline: -webkit-focus-ring-color auto 5px;
-    outline-color: -webkit-focus-ring-color;
-    outline-style: auto;
-    outline-width: 5px; */
-  /* } */
-  :global(label.active) {
-    opacity: 1;
-  }
-  /* Create a custom radio button */
-  .indicator {
-    position: relative;
-    height: 3vw;
-    width: 3vw;
-    border-radius: 100%;
-    border: 0.2vw solid #6b46c1;
-    border-radius: 100%;
-    background: white;
-  }
-  label.active .indicator {
-    border: 1vw solid #6b46c1;
-  }
-  @media (min-width: 768px) {
-    /* Input styles */
-    :global(input) {
-      height: 2vw;
-      min-height: fit-content;
-      padding: 0.75vw;
-      margin-bottom: 2vw;
-      background: white;
-      border: 0.2vw solid #6b46c1;
-    }
-
-    :global(select) {
-      height: 2vw;
-      min-height: fit-content;
-      padding: 0.75vw;
-      margin-bottom: 2vw;
-      border: 0.2vw solid #6b46c1;
-    }
-
-    :global(textarea) {
-      padding: 0.75vw;
-      border: 0.2vw solid #6b46c1;
-    }
-    /* TOggle indicator styles  */
-    .indicator {
-      height: 1.5vw;
-      width: 1.5vw;
-    }
-    label.active .indicator {
-      border: 0.5vw solid #6b46c1;
-    }
-
-    :global(.toggle > label) {
-      border: 0.2vw solid #6b46c1;
-    }
-
-    :global(.primary-button) {
-      margin-top: 3vw;
-      /* background: none; */
-      padding: 1.5vw;
-    }
-    .primary-button:hover:not(:disabled) {
-      /* background: rgba(107, 70, 193, 0.3); */
-      /* background: none; */
-    }
-    :global(select) {
-      background-size: 1vw;
-    }
-  }
-</style>
 
 <svelte:head>
   <title>Anfrage</title>
@@ -436,33 +293,34 @@
         </div>
       {/if}
       {#if currentTab == 1}
-        <div class="tab lg:w-4/6 lg:mx-auto">
+        <div class="tab flex flex-col lg:w-4/6 m-auto">
           <p class="text-x1p5 md:text-x0p25">Schritt 2 von 2</p>
           <h2 class="text-x3 md:text-x2 text-primary mb-x1">
             An wen soll die Entschädigung gezahlt werden?
           </h2>
-          <label class="inline-flex flex-col ">
-            Name *
-            <input
-              name="konto-name"
-              bind:value={$schadenFormData.kontoName}
-              required />
-          </label>
-          <label class="inline-flex flex-col ">
-            IBAN *
-            <input name="iban" bind:value={$schadenFormData.iban} required />
-          </label>
-          <label class="inline-flex flex-col ">
-            Geldinstitut *
-            <input name="bank" bind:value={$schadenFormData.bank} required />
-          </label>
+          <div class="grid md:grid-cols-2 gap-x0p5">
+            <label class="inline-flex flex-col ">
+              Name *
+              <input
+                name="konto-name"
+                bind:value={$schadenFormData.kontoName}
+                required />
+            </label>
+            <label class="inline-flex flex-col ">
+              IBAN *
+              <input name="iban" bind:value={$schadenFormData.iban} required />
+            </label>
+            <label class="inline-flex flex-col ">
+              Geldinstitut *
+              <input name="bank" bind:value={$schadenFormData.bank} required />
+            </label>
+          </div>
 
-          <label class="inline-flex flex-col ">
+          <FileUpload bind:value={$schadenFormData.files}>
             Wenn schon eine Rechnung vorliegt, können Sie diese hier hochladen.
             Wenn Sie noch weitere Unterlagen (Fotos, Kostenvoranschlag oder
             ähnliches) beifügen wollen, können Sie das hier tun:
-            <FileUpload files={$schadenFormData.files} />
-          </label>
+          </FileUpload>
 
           <label class="flex items-center my-x0p5 cursor-pointer">
             <input
@@ -476,9 +334,8 @@
               <a href="/datenschutz" class="underline">Mehr erfahren</a>
             </span>
           </label>
-
           {#if errors.tab2}
-            <div class="text-warning">
+            <div class="text-warning mb-x1">
               Bitte fülle alle mit * markierten Felder aus und akzeptiere die
               Bedingungen.
             </div>

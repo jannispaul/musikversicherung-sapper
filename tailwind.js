@@ -17,6 +17,7 @@ module.exports = {
         warning: "red",
         light: "#F8F5FF",
         primary: "#6B46C1",
+        "primary-extra-light": "#6c47c2",
         "primary-light": "#EEE7FF",
         secondary: "#DB0086",
         "secondary-light": "#F7E9F9",

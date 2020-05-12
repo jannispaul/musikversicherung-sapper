@@ -3,54 +3,6 @@
   import Layout from "./_layouts/layout.svelte";
 </script>
 
-<style>
-  label:focus {
-    outline: 0;
-  }
-  .stars label:hover {
-    cursor: pointer;
-  }
-
-  :global(input) {
-    height: 5vw;
-    min-height: fit-content;
-    padding: 1.5vw;
-    margin-bottom: 2vw;
-    background: white;
-    border: 0.2vw solid #6b46c1;
-  }
-  :global(textarea) {
-    padding: 1.5vw;
-    border: 0.2vw solid #6b46c1;
-  }
-  :global(.primary-button) {
-    margin-top: 3vw;
-    background: rgba(107, 70, 193, 0.15);
-    padding: 1.5vw;
-  }
-  @media (min-width: 768px) {
-    /* Input styles */
-    :global(input) {
-      height: 2vw;
-      min-height: fit-content;
-      padding: 0.75vw;
-      margin-bottom: 2vw;
-      background: white;
-      border: 0.2vw solid #6b46c1;
-    }
-
-    :global(textarea) {
-      padding: 0.75vw;
-      border: 0.2vw solid #6b46c1;
-    }
-    :global(.primary-button) {
-      padding: 0;
-      background: none;
-      margin-top: 0;
-    }
-  }
-</style>
-
 <Layout>
   <div
     class="text-x2 md:text-x1 lg:text-x0p5 px-x1p5 md:grid grid-cols-2 md:-mt-x1">
