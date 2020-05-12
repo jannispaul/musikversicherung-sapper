@@ -5,7 +5,7 @@
   import { onMount } from "svelte";
 
   // Setup variables for multi step form
-  let currentTab = 1;
+  let currentTab = 0;
   let termsAccepted = false;
 
   // Setup functions to navigate between tabs
@@ -14,10 +14,10 @@
 
   // Create store
   let schadenFormData = writable({});
-
   $: {
     console.log($schadenFormData);
   }
+  // Setup error handling
   $: errors = {
     tab1:
       !$schadenFormData.vorname ||
@@ -30,16 +30,15 @@
       !$schadenFormData.scheinnr ||
       !$schadenFormData.datum ||
       !$schadenFormData.ort ||
-      !$schadenFormData.schadenhoehe ||
+      // !$schadenFormData.schadenhoehe ||
       !$schadenFormData.verursacher ||
       !$schadenFormData.gegenstand ||
       !$schadenFormData.schilderung ||
-      !$schadenFormData.vorsteuerabzug ||
-      !$schadenFormData.nachricht
+      !$schadenFormData.vorsteuerabzug
         ? true
         : false,
     tab2:
-      !$schadenFormData.kontoinhaber ||
+      !$schadenFormData.kontoInhaber ||
       !$schadenFormData.iban ||
       !$schadenFormData.bank ||
       !termsAccepted
@@ -70,7 +69,7 @@
           schilderung: undefined,
           vorsteuerabzug: undefined,
           nachricht: undefined,
-          kontoinhaber: undefined,
+          kontoInhaber: undefined,
           iban: undefined,
           bank: undefined,
           files: []
@@ -79,6 +78,9 @@
     }
 
     initiateFormData();
+
+    // Remove saved entries for files as they can't be stored in localstorage
+    $schadenFormData.files = [];
 
     // Subscribe to store to update object saved in localStorage
     schadenFormData.subscribe(schadenFormData =>
@@ -105,7 +107,7 @@
       .catch(error => console.log("error", error));
 
     // Remove schadenFormData from localstorage so form is empty
-    localStorage.removeItem("schadenFormData");
+    // localStorage.removeItem("schadenFormData");
 
     // Redirect to danke page
     window.location.href = "/danke/";
@@ -203,12 +205,11 @@
                 required />
             </label>
             <label class="inline-flex flex-col ">
-              Schadenhöhe
+              Schadenhöhe (soweit schon bekannt)
               <input
                 name="telefon"
                 bind:value={$schadenFormData.schadenhoehe}
                 required />
-              <span>Soweit schon bekannt</span>
             </label>
             <label class="inline-flex flex-col ">
               Wer hat den Schaden verursacht? *
@@ -276,7 +277,7 @@
               id="nextBtn"
               on:click={nextTab}
               class="primary-button order-2 w-1/2"
-              disabled={!errors.tab1}>
+              disabled={errors.tab1}>
               Weiter
             </button>
           </div>
@@ -293,7 +294,7 @@
               Name *
               <input
                 name="konto-name"
-                bind:value={$schadenFormData.kontoName}
+                bind:value={$schadenFormData.kontoInhaber}
                 required />
             </label>
             <label class="inline-flex flex-col ">
