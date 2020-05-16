@@ -7,6 +7,11 @@
   // Setup variables for multi step form
   let currentTab = 0;
   let termsAccepted = false;
+  let files = [];
+  $: {
+    // console.log(files);
+    console.log($schadenFormData.file);
+  }
 
   // Setup functions to navigate between tabs
   let nextTab = () => currentTab++;
@@ -14,9 +19,9 @@
 
   // Create store
   let schadenFormData = writable({});
-  $: {
-    console.log($schadenFormData);
-  }
+  // $: {
+  //   console.log($schadenFormData);
+  // }
   // Setup error handling
   $: errors = {
     tab1:
@@ -24,12 +29,12 @@
       !$schadenFormData.nachname ||
       !$schadenFormData.strasse ||
       !$schadenFormData.plz ||
-      !$schadenFormData.ort ||
+      !$schadenFormData.wohnort ||
       !$schadenFormData.email ||
       !$schadenFormData.telefon ||
       !$schadenFormData.scheinnr ||
       !$schadenFormData.datum ||
-      !$schadenFormData.ort ||
+      !$schadenFormData.schadenort ||
       // !$schadenFormData.schadenhoehe ||
       !$schadenFormData.verursacher ||
       !$schadenFormData.gegenstand ||
@@ -57,12 +62,12 @@
           nachname: undefined,
           strasse: undefined,
           plz: undefined,
-          ort: undefined,
+          wohnort: undefined,
           email: undefined,
           telefon: undefined,
           scheinnr: undefined,
           datum: undefined,
-          ort: undefined,
+          schadenort: undefined,
           schadenhoehe: undefined,
           verursacher: undefined,
           gegenstand: undefined,
@@ -71,16 +76,15 @@
           nachricht: undefined,
           kontoInhaber: undefined,
           iban: undefined,
-          bank: undefined,
-          files: []
+          bank: undefined
+          // files: []
         }
       );
     }
 
     initiateFormData();
-
     // Remove saved entries for files as they can't be stored in localstorage
-    $schadenFormData.files = [];
+    $schadenFormData.files = files;
 
     // Subscribe to store to update object saved in localStorage
     schadenFormData.subscribe(schadenFormData =>
@@ -89,12 +93,26 @@
   });
 
   // Send data to integromat webhook, clear schadenFormData from localstorage, and redirect on submit
-  async function handleSubmit() {
+  async function handleSubmit(event) {
+    // Create ne FormData
+    const formData = new FormData();
+
+    // Append schadenFormData to FormData
+    for (let key in $schadenFormData) {
+      formData.append(key, $schadenFormData[key]);
+    }
+
+    // Append files to FormData
+    for (let file in files) {
+      formData.append("file[]", files[file]);
+    }
+    // files.forEach(file => formData.append("file[]", file));
+
     // Confige fetch request options
     var requestOptions = {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify($schadenFormData),
+      // body: JSON.stringify($schadeFormData),
+      body: formData,
       redirect: "follow"
     };
 
@@ -136,98 +154,68 @@
             </label>
             <label class="inline-flex flex-col ">
               Vorname *
-              <input
-                name="vorname"
-                bind:value={$schadenFormData.vorname}
-                required />
+              <input name="vorname" bind:value={$schadenFormData.vorname} />
             </label>
             <label class="inline-flex flex-col ">
               Nachname *
-              <input
-                name="nachname"
-                bind:value={$schadenFormData.nachname}
-                required />
+              <input name="nachname" bind:value={$schadenFormData.nachname} />
             </label>
             <label class="inline-flex flex-col ">
               Straße *
-              <input
-                name="telefon"
-                bind:value={$schadenFormData.strasse}
-                required />
+              <input name="strasse" bind:value={$schadenFormData.strasse} />
             </label>
             <label class="inline-flex flex-col ">
               Postleitzahl *
-              <input
-                name="telefon"
-                bind:value={$schadenFormData.plz}
-                required />
+              <input name="plz" bind:value={$schadenFormData.plz} />
             </label>
             <label class="inline-flex flex-col ">
               Ort *
-              <input
-                name="telefon"
-                bind:value={$schadenFormData.ort}
-                required />
+              <input name="wohnort" bind:value={$schadenFormData.wohnort} />
             </label>
             <label class="inline-flex flex-col ">
               E-Mail *
-              <input
-                name="email"
-                bind:value={$schadenFormData.email}
-                required />
+              <input name="email" bind:value={$schadenFormData.email} />
             </label>
             <label class="inline-flex flex-col ">
               Telefonnummer *
-              <input
-                name="telefon"
-                bind:value={$schadenFormData.telefon}
-                required />
+              <input name="telefon" bind:value={$schadenFormData.telefon} />
             </label>
             <label class="inline-flex flex-col ">
               Versicherungsscheinnummer *
-              <input
-                name="telefon"
-                bind:value={$schadenFormData.scheinnr}
-                required />
+              <input name="scheinnr" bind:value={$schadenFormData.scheinnr} />
             </label>
             <label class="inline-flex flex-col ">
               Schadendatum *
-              <input
-                name="telefon"
-                bind:value={$schadenFormData.datum}
-                required />
+              <input name="datum" bind:value={$schadenFormData.datum} />
             </label>
             <label class="inline-flex flex-col ">
               Schadenort *
               <input
-                name="telefon"
-                bind:value={$schadenFormData.ort}
-                required />
+                name="schadenort"
+                bind:value={$schadenFormData.schadenort} />
             </label>
             <label class="inline-flex flex-col ">
               Schadenhöhe (soweit schon bekannt)
               <input
-                name="telefon"
-                bind:value={$schadenFormData.schadenhoehe}
-                required />
+                name="schadenhoehe"
+                bind:value={$schadenFormData.schadenhoehe} />
             </label>
             <label class="inline-flex flex-col ">
               Wer hat den Schaden verursacht? *
               <input
-                name="telefon"
-                bind:value={$schadenFormData.verursacher}
-                required />
+                name="verursacher"
+                bind:value={$schadenFormData.verursacher} />
             </label>
             <label class="inline-flex flex-col ">
               Betroffener Gegenstand? *
               <input
-                name="telefon"
-                bind:value={$schadenFormData.gegenstand}
-                required />
+                name="gegenstand"
+                bind:value={$schadenFormData.gegenstand} />
             </label>
             <label for="" class=" block col-span-2">
               Kurze Schadenschilderung *
               <textarea
+                name="schilderung"
                 bind:value={$schadenFormData.schilderung}
                 rows="4"
                 class="w-full border-primary" />
@@ -244,7 +232,8 @@
                 <input
                   type="radio"
                   bind:group={$schadenFormData.vorsteuerabzug}
-                  value="ja" />
+                  value="ja"
+                  name="vorsteuerabzug" />
                 <div class="flex items-center">
                   <div class="indicator relative inline mr-x1" />
                 </div>
@@ -256,7 +245,8 @@
                 <input
                   type="radio"
                   bind:group={$schadenFormData.vorsteuerabzug}
-                  value="nein" />
+                  value="nein"
+                  name="vorsteuerabzug" />
                 <div class="flex">
                   <div class="indicator relative inline mr-x1" />
                 </div>
@@ -283,7 +273,7 @@
           </div>
         </div>
       {/if}
-      {#if currentTab == 1}
+      {#if currentTab == 0}
         <div class="tab flex flex-col lg:w-4/6 m-auto">
           <p class="text-x1p5 md:text-x0p25">Schritt 2 von 2</p>
           <h2 class="text-x3 md:text-x2 text-primary mb-x1">
@@ -294,20 +284,19 @@
               Name *
               <input
                 name="konto-name"
-                bind:value={$schadenFormData.kontoInhaber}
-                required />
+                bind:value={$schadenFormData.kontoInhaber} />
             </label>
             <label class="inline-flex flex-col ">
               IBAN *
-              <input name="iban" bind:value={$schadenFormData.iban} required />
+              <input name="iban" bind:value={$schadenFormData.iban} />
             </label>
             <label class="inline-flex flex-col ">
               Geldinstitut *
-              <input name="bank" bind:value={$schadenFormData.bank} required />
+              <input name="bank" bind:value={$schadenFormData.bank} />
             </label>
           </div>
 
-          <FileUpload bind:files={$schadenFormData.files}>
+          <FileUpload bind:files>
             Wenn schon eine Rechnung vorliegt, können Sie diese hier hochladen.
             Wenn Sie noch weitere Unterlagen (Fotos, Kostenvoranschlag oder
             ähnliches) beifügen wollen, können Sie das hier tun:
@@ -333,6 +322,7 @@
           {/if}
           <div class="grid gap-x0p5 grid-cols-2 md:flex md:justify-center ">
             <button
+              type="submit"
               class="primary-button order-2 w-1/2"
               disabled={!termsAccepted}
               on:click|preventDefault={handleSubmit}>

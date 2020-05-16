@@ -3,9 +3,9 @@
   let isDraggingOver = false;
 
   // Log all changes to files
-  $: {
-    console.log(files);
-  }
+  // $: {
+  //   console.log(files);
+  // }
 
   // Set isDraggingOver to true when entering the drag zone
   function handleDragEnter(e) {
