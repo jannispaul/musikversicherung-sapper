@@ -83,8 +83,6 @@
     }
 
     initiateFormData();
-    // Remove saved entries for files as they can't be stored in localstorage
-    $schadenFormData.files = files;
 
     // Subscribe to store to update object saved in localStorage
     schadenFormData.subscribe(schadenFormData =>
@@ -103,32 +101,28 @@
     }
 
     // Append files to FormData
-    for (let file in files) {
-      formData.append("file[]", files[file]);
-    }
-    // files.forEach(file => formData.append("file[]", file));
+    files.forEach((file, index) => formData.append("file" + index, file));
 
     // Confige fetch request options
     var requestOptions = {
       method: "POST",
-      // body: JSON.stringify($schadeFormData),
       body: formData,
       redirect: "follow"
     };
 
     // Post to integromat
     const response = await fetch(
-      "https://hook.integromat.com/18q6cjkcxpcl121zortxbnn506xv3hr4",
+      "https://www.formbackend.com/f/706ac99a74b44def",
       requestOptions
     )
       .then(response => response.text())
       .catch(error => console.log("error", error));
 
     // Remove schadenFormData from localstorage so form is empty
-    // localStorage.removeItem("schadenFormData");
+    localStorage.removeItem("schadenFormData");
 
     // Redirect to danke page
-    window.location.href = "/danke/";
+    window.location.href = "/schaden-gemeldet/";
   }
 </script>
 
