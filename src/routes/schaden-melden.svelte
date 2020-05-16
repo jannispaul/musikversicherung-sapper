@@ -77,7 +77,6 @@
           kontoInhaber: undefined,
           iban: undefined,
           bank: undefined
-          // files: []
         }
       );
     }
