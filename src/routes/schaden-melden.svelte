@@ -266,7 +266,7 @@
           </div>
         </div>
       {/if}
-      {#if currentTab == 0}
+      {#if currentTab == 1}
         <div class="tab flex flex-col lg:w-4/6 m-auto">
           <p class="text-x1p5 md:text-x0p25">Schritt 2 von 2</p>
           <h2 class="text-x3 md:text-x2 text-primary mb-x1">
