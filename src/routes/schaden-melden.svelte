@@ -27,9 +27,9 @@
     tab1:
       !$schadenFormData.vorname ||
       !$schadenFormData.nachname ||
-      !$schadenFormData.strasse ||
-      !$schadenFormData.plz ||
-      !$schadenFormData.wohnort ||
+      // !$schadenFormData.strasse ||
+      // !$schadenFormData.plz ||
+      // !$schadenFormData.wohnort ||
       !$schadenFormData.email ||
       !$schadenFormData.telefon ||
       !$schadenFormData.scheinnr ||
@@ -59,9 +59,9 @@
           anrede: "Frau",
           vorname: undefined,
           nachname: undefined,
-          strasse: undefined,
-          plz: undefined,
-          wohnort: undefined,
+          // strasse: undefined,
+          // plz: undefined,
+          // wohnort: undefined,
           email: undefined,
           telefon: undefined,
           scheinnr: undefined,
@@ -71,7 +71,7 @@
           verursacher: undefined,
           gegenstand: undefined,
           schilderung: undefined,
-          vorsteuerabzug: undefined,
+          vorsteuerabzug: "nein",
           nachricht: undefined,
           kontoInhaber: undefined,
           iban: undefined,
@@ -136,8 +136,8 @@
         <div class="tab flex flex-col lg:w-4/6 m-auto">
           <p class="text-x1p5 md:text-x0p25">Schritt 1 von 2</p>
           <h2 class="text-x3 md:text-x2 text-primary mb-x1">Schaden melden</h2>
-          <div class="grid md:grid-cols-2 gap-x0p5">
-            <label class="inline-flex flex-col ">
+          <div class="flex flex-col md:grid md:grid-cols-2 gap-x0p5">
+            <label class="inline-flex flex-col">
               Anrede *
               <select bind:value={$schadenFormData.anrede} autofocus>
                 <option value="Frau">Frau</option>
@@ -152,7 +152,7 @@
               Nachname *
               <input name="nachname" bind:value={$schadenFormData.nachname} />
             </label>
-            <label class="inline-flex flex-col ">
+            <!-- <label class="inline-flex flex-col ">
               Straße *
               <input name="strasse" bind:value={$schadenFormData.strasse} />
             </label>
@@ -163,7 +163,7 @@
             <label class="inline-flex flex-col ">
               Ort *
               <input name="wohnort" bind:value={$schadenFormData.wohnort} />
-            </label>
+            </label> -->
             <label class="inline-flex flex-col ">
               E-Mail *
               <input name="email" bind:value={$schadenFormData.email} />
@@ -178,7 +178,7 @@
             </label>
             <label class="inline-flex flex-col ">
               Schadendatum *
-              <input name="datum" bind:value={$schadenFormData.datum} />
+              <input name="date" bind:value={$schadenFormData.datum} />
             </label>
             <label class="inline-flex flex-col ">
               Schadenort *
@@ -192,30 +192,9 @@
                 name="schadenhoehe"
                 bind:value={$schadenFormData.schadenhoehe} />
             </label>
-            <label class="inline-flex flex-col ">
-              Wer hat den Schaden verursacht? *
-              <input
-                name="verursacher"
-                bind:value={$schadenFormData.verursacher} />
-            </label>
-            <label class="inline-flex flex-col ">
-              Betroffener Gegenstand? *
-              <input
-                name="gegenstand"
-                bind:value={$schadenFormData.gegenstand} />
-            </label>
-            <label for="" class=" block col-span-2">
-              Kurze Schadenschilderung *
-              <textarea
-                name="schilderung"
-                bind:value={$schadenFormData.schilderung}
-                rows="4"
-                class="w-full border-primary" />
-            </label>
-            <div
-              class="inline flex flex-wrap md:items-stretch toggle col-span-2 ">
+            <div class="inline flex flex-wrap toggle ">
               <span class="w-full flex-0">
-                Sind Sie zum Vorsteuerabzug berechtigt? *
+                Bist Du zum Vorsteuerabzug berechtigt? *
               </span>
               <label
                 class="block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
@@ -245,6 +224,27 @@
                 <span>Nein</span>
               </label>
             </div>
+            <label class="inline-flex flex-col ">
+              Wer hat den Schaden verursacht? *
+              <input
+                name="verursacher"
+                bind:value={$schadenFormData.verursacher} />
+            </label>
+            <label class="inline-flex flex-col ">
+              Betroffener Gegenstand? *
+              <input
+                name="gegenstand"
+                bind:value={$schadenFormData.gegenstand} />
+            </label>
+            <label for="" class=" block col-span-2">
+              Kurze Schadenschilderung *
+              <textarea
+                name="schilderung"
+                bind:value={$schadenFormData.schilderung}
+                rows="4"
+                class="w-full border-primary" />
+            </label>
+
             {#if errors.tab1}
               <div class="text-warning col-span-2 text-center">
                 Bitte fülle alle mit * markierten Felder aus.

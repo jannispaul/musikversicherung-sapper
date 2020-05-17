@@ -59,9 +59,9 @@
         29614 Soltau
       </p>
       <p>
-        Telefon: 05191-9313199
+        Telefon: +49 5191-9313199
         <br />
-        Mobil 0172-5113611
+        Mobil +49 172-5113611
         <span class="Apple-converted-space">
           <br />
         </span>

@@ -13,6 +13,7 @@
   @media (min-width: 768px) {
     .content {
       background: linear-gradient(240.83deg, #db0086 4.06%, #960075 94.06%);
+      min-width: 40vw;
       max-width: 45vw;
     }
     .bg-gradient-secondary {

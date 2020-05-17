@@ -42,9 +42,10 @@
             Heiner Blaskewitz, Generalagentur der Mannheimer Versicherungen,
           </p>
           <p>
-            Bahnhofstr. 35, 29614 Soltau, Tel. 05191-9313199, Fax 05191-9739026
+            Bahnhofstr. 35, 29614 Soltau, Tel. +49 5191-9313199, Fax +49
+            5191-9739026
             <br />
-            Mobil: 0172-5113611, Mail:&nbsp;
+            Mobil: +49 172-5113611, Mail:&nbsp;
             <a href="mailto:heiner@blaskewitz.com">heiner@blaskewitz.com</a>
           </p>
           <br />

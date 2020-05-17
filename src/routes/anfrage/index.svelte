@@ -147,7 +147,7 @@
     height: 5vw;
     min-height: fit-content;
     padding: 1.5vw;
-    margin-bottom: 2vw;
+    margin-bottom: 4vw;
     background: white;
     border: 0.2vw solid #6b46c1;
   }
@@ -166,7 +166,7 @@
     height: 5vw;
     min-height: fit-content;
     padding: 1vw 1.5vw;
-    margin-bottom: 2vw;
+    margin-bottom: 4vw;
     border: 0.2vw solid #6b46c1;
     border-radius: 0;
   }
@@ -292,9 +292,7 @@
               <div class="indicator relative inline mr-x1 md:mr-x0p5" />
             </div>
             <span>Elektronische Instrumente & Equipment</span>
-
           </label>
-
         </div>
         {#if $formData.versicherungsTyp == 'IAMSOUND'}
           <label class="flex flex-col">
