@@ -30,7 +30,11 @@
       „aufgehoben“.
     </p>
     <div class="flex -mx-x1p5 md:mx-0 block image md:-mb-x6 md:relative md:z-0">
-      <Image src="mixer" class="z-10 " />
+      <Image
+        srcset={`/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_200.jpg 200w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_601.jpg 601w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_879.jpg 879w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1117.jpg 1117w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1330.jpg 1330w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1520.jpg 1520w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1694.jpg 1694w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1875.jpg 1875w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2057.jpg 2057w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.jpg 2160w`}
+        src="/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.jpg"
+        alt="mixer"
+        class="z-10 " />
     </div>
   </div>
 </section>

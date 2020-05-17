@@ -72,10 +72,17 @@
   </div>
   <div class="shape hidden md:block" />
   <div class="z-20 image-drums relative hidden md:inline-block">
-    <Image src="drums" alt="" />
+    <Image
+      sizes="(max-width: 2160px) 100vw, 2160px"
+      srcset={`/images/drums_ulbs6v/drums_ulbs6v_c_scale,w_200.jpg 200w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_630.jpg 630w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_914.jpg 914w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_1155.jpg 1155w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_1343.jpg 1343w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_1543.jpg 1543w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_1721.jpg 1721w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_1906.jpg 1906w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_2078.jpg 2078w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_2160.jpg 2160w`}
+      src="/images/drums_ulbs6v/drums_ulbs6v_c_scale,w_2160.jpg"
+      alt="drummer" />
   </div>
   <div class="z-30 image-guitar relative hidden md:inline-block">
-    <Image src="guitar" alt="" />
+    <Image
+      srcset={`/images/guitar_k2skaw/guitar_k2skaw_c_scale,w_200.jpg 200w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_704.jpg 704w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1013.jpg 1013w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1234.jpg 1234w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1425.jpg 1425w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1605.jpg 1605w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1774.jpg 1774w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1940.jpg 1940w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_2100.jpg 2100w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_2160.jpg 2160w`}
+      src="/images/guitar_k2skaw/guitar_k2skaw_c_scale,w_2160.jpg"
+      alt="guitar" />
   </div>
 
 </section>
