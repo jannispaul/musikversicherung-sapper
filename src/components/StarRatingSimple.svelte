@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from "svelte";
+  // import { onMount } from "svelte";
   export let rating = 0;
   export let style = {
     styleStarWidth: 20,
