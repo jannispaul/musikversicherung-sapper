@@ -7,6 +7,9 @@ faq11:
 faq12:
   question: "Ist mein Instrument auch versichert, wenn ich es verleihe?"
   answer: "Ja."
+faq13:
+  question: "Was ist bei Auslandsreien zu beachten?"
+  answer: "Dazu haben wir <a href='/Empfehlungen-zu-Auslandsreisen.pdf' class='underline'>diesen Ratgeber</a>."
 faq08:
   question: "Kann ich mir für die Reparaturdauer ein Ersatzinstrument leihen?"
   answer: "Ja, die Kosten für ein gleichwertiges Leihinstrument werden im Rahmen der Versicherung ebenfalls ersetzt."
