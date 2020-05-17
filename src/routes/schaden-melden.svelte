@@ -45,8 +45,7 @@
     tab2:
       !$schadenFormData.kontoInhaber ||
       !$schadenFormData.iban ||
-      !$schadenFormData.bank ||
-      !termsAccepted
+      !$schadenFormData.bank
         ? true
         : false
   };
@@ -290,9 +289,9 @@
           </div>
 
           <FileUpload bind:files>
-            Wenn schon eine Rechnung vorliegt, können Sie diese hier hochladen.
-            Wenn Sie noch weitere Unterlagen (Fotos, Kostenvoranschlag oder
-            ähnliches) beifügen wollen, können Sie das hier tun:
+            Wenn schon eine Rechnung vorliegt oder Du weitere Unterlagen (Fotos,
+            Kostenvoranschlag,...) beifügen möchtest, kannst Du sie hier
+            hochladen.
           </FileUpload>
 
           <label class="flex items-center my-x0p5 cursor-pointer">
@@ -307,10 +306,12 @@
               <a href="/datenschutz" class="underline">Mehr erfahren</a>
             </span>
           </label>
-          {#if errors.tab2}
+          {#if errors.tab2 || !termsAccepted}
             <div class="text-warning mb-x1">
-              Bitte fülle alle mit * markierten Felder aus und akzeptiere die
-              Bedingungen.
+              Bitte
+              {#if errors.tab2}fülle alle mit * markierten Felder aus{/if}
+              {#if errors.tab2 && !termsAccepted}und{/if}
+              {#if !termsAccepted}akzeptiere die Bedingungen.{/if}
             </div>
           {/if}
           <div class="grid gap-x0p5 grid-cols-2 md:flex md:justify-center ">
