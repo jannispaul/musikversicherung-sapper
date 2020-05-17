@@ -5,7 +5,12 @@
       .then(reviewData => {
         return { reviewData };
       });
+    return this.fetch("sitemap.xml");
   }
+
+  // export function preload({ params, query }) {
+  //   return this.fetch("sitemap.xml");
+  // }
 </script>
 
 <script>

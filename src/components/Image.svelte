@@ -115,10 +115,11 @@
 <!-- <img {src} {alt} /> -->
 <picture class="lazy lazy-initial">
   <source
-    srcset={`https://musikversicherung.netlify.com/images/tiny/${src}`}
-    media="(min-width: 1200px)" />
-  <source
-    srcset={`https://musikversicherung.netlify.com/images/tiny/${src}`}
-    media="(min-width: 740px)" />
-  <img src={`https://musikversicherung.netlify.com/images/tiny/${src}`} {alt} />
+    sizes="(max-width: 4000px) 100vw, 4000px"
+    srcset={`/images/${src}/${src}_w_190.webp 190w,/images/${src}/${src}_w_741.webp 741w,/images/${src}/${src}_w_1134.webp 1134w,/images/${src}/${src}_w_1381.webp 1381w,/images/${src}/${src}_w_1588.webp 1588w,/images/${src}/${src}_w_1772.webp 1772w,/images/${src}/${src}_w_1945.webp 1945w,/images/${src}/${src}_w_2082.webp 2082w,/images/${src}/${src}_w_2128.webp 2128w,/images/${src}/${src}_w_2160.webp 2160w`} />
+  <img
+    sizes="(max-width: 4000px) 100vw, 4000px"
+    srcset={`/images/${src}/${src}_w_190.jpg 190w,/images/${src}/${src}_w_741.jpg 741w,/images/${src}/${src}_w_1134.jpg 1134w,/images/${src}/${src}_w_1381.jpg 1381w,/images/${src}/${src}_w_1588.jpg 1588w,/images/${src}/${src}_w_1772.jpg 1772w,/images/${src}/${src}_w_1945.jpg 1945w,/images/${src}/${src}_w_2082.jpg 2082w,/images/${src}/${src}_w_2128.jpg 2128w,/images/${src}/${src}_w_2160.jpg 2160w`}
+    src={`/images/${src}/${src}_w_2160.jpg`}
+    {alt} />
 </picture>

@@ -26,7 +26,7 @@
   class="bg-gradient-secondary p-x1p5 py-x3 md:py-x2 w-100 text-light md:flex
   relative items-center">
   <div class="hidden md:inline-block order-2">
-    <Image src="drums.jpg" alt="" />
+    <Image src="drums" alt="" />
   </div>
 
   <div

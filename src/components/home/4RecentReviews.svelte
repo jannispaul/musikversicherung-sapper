@@ -72,10 +72,10 @@
   </div>
   <div class="shape hidden md:block" />
   <div class="z-20 image-drums relative hidden md:inline-block">
-    <Image src="drums.jpg" alt="" />
+    <Image src="drums" alt="" />
   </div>
   <div class="z-30 image-guitar relative hidden md:inline-block">
-    <Image src="guitar.jpg" alt="" />
+    <Image src="guitar" alt="" />
   </div>
 
 </section>
