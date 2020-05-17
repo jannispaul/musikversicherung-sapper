@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="theme-color" content="#333333" />
+    <!-- <script src="./unsupported.js"></script> -->
 
     %sapper.base%
 
@@ -75,6 +76,37 @@
         );
       }
     </script> -->
+
+    <!-- <script>
+      !function () {
+        console.log("yeah");
+      };
+      !(function () {
+        "use strict";
+        if (
+          !(
+            "function" == typeof Blob &&
+            "undefined" != typeof Intl &&
+            "undefined" != typeof MutationObserver &&
+            "undefined" != typeof URLSearchParams &&
+            "undefined" != typeof WebSocket &&
+            "undefined" != typeof IntersectionObserver &&
+            "entries" in FormData.prototype &&
+            "append" in Element.prototype
+          )
+        ) {
+          const e = document.getElementById("unsupported-browser");
+          e && e.removeAttribute("hidden") && console.log("not supported");
+        }
+      })();
+    </script> -->
+    <!-- <script
+      crossorigin="anonymous"
+      async="async"
+      integrity="sha512-0IRvbPAdbPLmTUFU15qKBgORxxjP1N3SqBBmrVR+FeI4aA6Ie6pCBNfPb1AxDdsGYyi2vqw8/tzf4Vdvje16nQ=="
+      type="application/javascript"
+      src="https://github.githubassets.com/assets/unsupported-bootstrap-d0846f6c.js"
+    ></script> -->
     <!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->

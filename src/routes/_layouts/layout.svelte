@@ -8,6 +8,7 @@
   import CookieNotice from "../../components/CookieNotice.svelte";
   import Nav from "../../components/Nav.svelte";
   import Footer from "../../components/Footer.svelte";
+  import NotSupported from "../../components/NotSupported.svelte";
   export let segment;
 </script>
 
@@ -36,6 +37,7 @@
 </svelte:head>
 <CookieNotice />
 <Nav {segment} />
+<NotSupported />
 
 <main class="mb-x3 md:mb-x1 mt-x1 relative z-0" id="main">
   <slot />
