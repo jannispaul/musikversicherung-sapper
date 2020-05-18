@@ -17,11 +17,10 @@
 <section class=" px-x1p5 pb-x3 md:py-x2 w-100 md:flex relative items-center">
 
   <iframe
-    src="https://www.youtube-nocookie.com/embed/F2IZ9GeyaSs"
-    title="Heiner Blaskewitz von B!-Das Verrsicherungsbüro stellt sich vor"
+    src="https://www.youtube-nocookie.com/embed/F2IZ9GeyaSs?rel=0"
+    title="Heiner Blaskewitz von B!-Das Versicherungsbüro stellt sich vor"
     frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope;
-    picture-in-picture"
+    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
     class="-mr-x1p5 -ml-x1p5 mb-x2 md:m-0" />
 
