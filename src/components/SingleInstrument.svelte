@@ -6,13 +6,20 @@
 </script>
 
 <style>
-  .toggle > label {
+  .toggle {
+    flex: 1 0 20%;
+  }
+  .toggle .option {
+    height: 9.5vw;
+    margin-bottom: 4vw;
+  }
+  /* .toggle > label {
     min-height: fit-content;
     padding: 1vw 1.5vw;
     margin-bottom: 2vw;
     margin-right: -0.4vw;
     @apply border-primary;
-  }
+  } */
   @media (min-width: 768px) {
     .toggle > label {
       padding: 0 1vw;
@@ -20,6 +27,10 @@
       display: flex;
       align-items: center;
       margin-right: -0.2vw;
+    }
+    .toggle .option {
+      height: 4.1vw;
+      margin-bottom: 2vw;
     }
   }
 </style>
@@ -45,22 +56,30 @@
     <input name="value" bind:value={instrument.value} />
   </label>
   <div class="toggle flex order-2 md:order-2">
-    <label class:active={instrument.valueType === 'Neuwert'} class="flex-1">
-      <input
-        type="radio"
-        name={'valueType' + index}
-        bind:group={instrument.valueType}
-        value="Neuwert" />
-      <span>Neuwert</span>
+    <input
+      type="radio"
+      name={'valueType' + index}
+      bind:group={instrument.valueType}
+      value="Neuwert"
+      id={'neuwert' + index} />
+    <label
+      class:active={instrument.valueType === 'Neuwert'}
+      class="option flex-1"
+      for={'neuwert' + index}>
+      <p>Neuwert</p>
     </label>
     <!-- <label for="Zeitwert"> -->
-    <label class:active={instrument.valueType === 'Zeitwert'} class="flex-1">
-      <input
-        type="radio"
-        name={'valueType' + index}
-        bind:group={instrument.valueType}
-        value="Zeitwert" />
-      Zeitwert
+    <input
+      type="radio"
+      name={'valueType' + index}
+      bind:group={instrument.valueType}
+      value="Zeitwert"
+      id={'zeitwert' + index} />
+    <label
+      class:active={instrument.valueType === 'Zeitwert'}
+      class="option flex-1"
+      for={'zeitwert' + index}>
+      <p>Zeitwert</p>
     </label>
   </div>
 

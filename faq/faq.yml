@@ -6,7 +6,7 @@ faq13:
   answer: "Dazu haben wir <a preload href='/Empfehlungen-zu-Auslandsreisen.pdf' class='underline' target='_blank' rel='noopener noreferrer' n>diesen Ratgeber</a>."
 faq11:
   question: "Muss ich einen Verleih anmelden?"
-  answer: "Nein."
+  answer: "Nein, es sei denn der Verleih erfolgt gewerblich."
 faq12:
   question: "Ist mein Instrument auch versichert, wenn ich es verleihe?"
   answer: "Ja."
@@ -45,9 +45,7 @@ faq09:
 faq02:
   question: "Welche Schäden sind versichert?"
   answer: >
-    Da es sich um eine All-Risk-Versicherung handelt, sind nahezu alle Risiken abgedeckt, die dem Instrument Schaden zufügen können. Versichert ist zum Beispiel das Risiko von:
-
-      - Beschädigung, gleich aus welchem Grund:
+    Da es sich um eine All-Risk-Versicherung handelt, sind nahezu alle Risiken abgedeckt, die dem Instrument Schaden zufügen können. Versichert ist zum Beispiel das Risiko von Beschädigung, gleich aus welchem Grund:
         - Zerstörung oder Verlust
         - bei Transporten
         - durch Diebstahl oder Raub

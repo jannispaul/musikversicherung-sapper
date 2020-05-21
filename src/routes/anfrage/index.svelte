@@ -112,7 +112,7 @@
   :global(.primary-button),
   .add-instrument {
     background: rgba(107, 70, 193, 0.15);
-    padding: 1.6vw 1.5vw 1.5vw 1.5vw;
+    padding: 3vw 1.5vw 2.4vw 1.5vw;
   }
 
   :global(.primary-button:hover:not(:disabled)),
@@ -170,35 +170,41 @@
     border-radius: 0;
   }
 
-  :global(.toggle > label) {
-    border: 0.5vw solid #6b46c1;
+  :global(.toggle) {
+    position: relative;
+  }
+  :global(.toggle > label.option) {
+    height: 16vw;
+    display: flex;
+    align-items: center;
+    flex: 1 0 45%;
+    border: 0.1vw solid #000;
     opacity: 0.5;
     cursor: pointer;
     position: relative;
+    text-align: center;
   }
-  /* .toggle > input:focus ~ label { */
-  /* outline: -webkit-focus-ring-color auto 5px;
-    outline-color: -webkit-focus-ring-color;
-    outline-style: auto;
-    outline-width: 5px; */
-  /* } */
-  :global(label.active) {
+  :global(.toggle > label.option:hover) {
+    opacity: 0.8;
+  }
+  :global(.toggle input:checked + .option) {
+    border: 0.3vw solid #6b46c1;
     opacity: 1;
   }
-  /* Create a custom radio button */
-  .indicator {
-    position: relative;
-    height: 3vw;
-    width: 3vw;
-    border-radius: 100%;
-    border: 0.2vw solid #6b46c1;
-    border-radius: 100%;
-    background: white;
+  :global(.option p) {
+    text-align: center;
+    width: 100%;
   }
-  label.active .indicator {
-    border: 1vw solid #6b46c1;
-  }
+
+  /* :global(label.active) {
+    opacity: 1;
+  } */
+
   @media (min-width: 768px) {
+    :global(.primary-button),
+    .add-instrument {
+      padding: 1.6vw 1.5vw 1.5vw 1.5vw;
+    }
     /* Input styles */
     :global(input) {
       height: 2vw;
@@ -222,15 +228,9 @@
       border: 0.2vw solid #6b46c1;
     }
     /* TOggle indicator styles  */
-    .indicator {
-      height: 1.5vw;
-      width: 1.5vw;
-    }
-    label.active .indicator {
-      border: 0.5vw solid #6b46c1;
-    }
 
-    :global(.toggle > label) {
+    :global(.toggle > label.option) {
+      height: 8vw;
       border: 0.2vw solid #6b46c1;
     }
 
@@ -267,13 +267,10 @@
             on:focus={onFocus} />
           <label
             for="SINFONIMA"
-            class="block p-x1 md:py-x0p25 md:px-x0p5 flex-1 flex md:mr-x0p5
-            mb-x1 items-center"
+            class="option block p-x1 md:py-x0p25 md:px-x0p5 flex-1 flex
+            md:mr-x0p5 mb-x1 items-center"
             class:active={$formData.versicherungsTyp === 'SINFONIMA'}>
-            <div class="flex items-center">
-              <div class="indicator relative inline mr-x1 md:mr-x0p5" />
-            </div>
-            <span>Akustische Instrumente</span>
+            <p>Akustische Instrumente</p>
           </label>
 
           <input
@@ -282,15 +279,15 @@
             value="IAMSOUND"
             id="IAMSOUND" />
           <label
-            class="block p-x1 md:py-x0p25 md:px-x0p5 flex-1 flex mb-x1
+            class="option block p-x1 md:py-x0p25 md:px-x0p5 flex-1 flex mb-x1
             items-center"
             class:active={$formData.versicherungsTyp === 'IAMSOUND'}
             for="IAMSOUND">
-
-            <div class="flex">
-              <div class="indicator relative inline mr-x1 md:mr-x0p5" />
-            </div>
-            <span>Elektronische Instrumente & Equipment</span>
+            <p>
+              Elektronische Instrumente
+              <br />
+              & Equipment
+            </p>
           </label>
         </div>
         {#if $formData.versicherungsTyp == 'IAMSOUND'}
@@ -413,7 +410,7 @@
                   Musikalische Jugend Deutschlands
                 </option>
                 <option value="Organisation: Lehrer an einer VDM-Musikschule">
-                  Organisation: Lehrer an einer VDM-Musikschule
+                  Lehrer an einer VDM-Musikschule
                 </option>
                 <option
                   value="Verband Deutscher Musikerzieher und konzertierender
@@ -448,19 +445,19 @@
           {/if}
         </div>
         {#if errors.tab1}
-          <div class="text-warning">
+          <div class="text-warning mb-x1 md:mb-x0p5 md:text-center">
             Bitte fülle alle mit * markierten Felder aus.
           </div>
         {/if}
       </div>
       <div
         class="grid gap-x0p5 grid-cols-2 md:flex md:justify-center md:w-2/3
-        md:m-auto">
+        md:m-auto mt-x1">
         <button
           type="button"
           id="nextBtn"
           on:click={nextTab}
-          class="primary-button order-2 w-1/2"
+          class="primary-button order-2 md:w-1/2"
           disabled={!$formData.vorname || !$formData.nachname || !$formData.email}>
           Weiter
         </button>
@@ -468,7 +465,7 @@
           type="button"
           id="prevBtn"
           on:click={prevTab}
-          class="primary-button order-1 mr-x0p5 w-1/2">
+          class="primary-button order-1 mr-x0p5 md:w-1/2">
           Zurück
         </button>
       </div>
@@ -513,7 +510,7 @@
 
           <div class="grid gap-x0p5 grid-cols-2 md:flex md:justify-center">
             <button
-              class="primary-button order-2 w-1/2"
+              class="primary-button order-2 md:w-1/2"
               disabled={!termsAccepted}
               on:click|preventDefault={handleSubmit}>
               Absenden
@@ -522,7 +519,7 @@
               type="primary-button"
               id="prevBtn"
               on:click={prevTab}
-              class="primary-button order-1 mr-x0p5 w-1/2">
+              class="primary-button order-1 mr-x0p5 md:w-1/2">
               Zurück
             </button>
           </div>
@@ -532,32 +529,34 @@
             <h2 class="text-x3 md:text-x2 text-primary mb-x1">
               Weitere Details
             </h2>
-            <div class="inline flex flex-wrap md:items-stretch toggle ">
-              <span class="w-full flex-0">Ist ein Proberaum vorhanden? *</span>
-              <label
-                class="block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
-                items-center"
-                class:active={$formData.proberaum === 'ja'}>
-                <input
-                  type="radio"
-                  bind:group={$formData.proberaum}
-                  value="ja" />
-                <div class="flex items-center">
-                  <div class="indicator relative inline mr-x1" />
-                </div>
-                <span>Ja</span>
+            <div class="inline flex flex-wrap md:items-stretch toggle">
+              <label class="w-full flex-0">
+                Ist ein Proberaum vorhanden? *
               </label>
+              <input
+                type="radio"
+                bind:group={$formData.proberaum}
+                value="ja"
+                id="proberaum-ja" />
               <label
-                class="block p-x1 md:p-x0p5 flex-1 flex mb-x1 items-center"
-                class:active={$formData.proberaum === 'nein'}>
-                <input
-                  type="radio"
-                  bind:group={$formData.proberaum}
-                  value="nein" />
-                <div class="flex">
-                  <div class="indicator relative inline mr-x1" />
-                </div>
-                <span>Nein</span>
+                class="option block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
+                items-center"
+                class:active={$formData.proberaum === 'ja'}
+                for="proberaum-ja">
+                <p>Ja</p>
+              </label>
+              <input
+                type="radio"
+                bind:group={$formData.proberaum}
+                value="nein"
+                id="proberaum-nein" />
+              <label
+                class="option block p-x1 md:p-x0p5 flex-1 flex mb-x1
+                items-center"
+                class:active={$formData.proberaum === 'nein'}
+                for="proberaum-nein">
+
+                <p>Nein</p>
               </label>
             </div>
             {#if $formData.proberaum === 'ja'}
@@ -566,30 +565,31 @@
                   Befindet sich der Proberaum in einem auch ansonsten bewohnten
                   Gebäude? *
                 </span>
+                <input
+                  type="radio"
+                  bind:group={$formData.bewohnt}
+                  value="ja"
+                  id="bewohnt-ja" />
                 <label
-                  class="block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
+                  class="option block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
                   items-center"
-                  class:active={$formData.bewohnt === 'ja'}>
-                  <input
-                    type="radio"
-                    bind:group={$formData.bewohnt}
-                    value="ja" />
-                  <div class="flex items-center">
-                    <div class="indicator relative inline mr-x1" />
-                  </div>
-                  <span>Ja</span>
+                  class:active={$formData.bewohnt === 'ja'}
+                  for="bewohnt-ja">
+
+                  <p>Ja</p>
                 </label>
+                <input
+                  type="radio"
+                  bind:group={$formData.bewohnt}
+                  value="nein"
+                  id="bewohnt-nein" />
                 <label
-                  class="block p-x1 md:p-x0p5 flex-1 flex mb-x1 items-center"
-                  class:active={$formData.bewohnt === 'nein'}>
-                  <input
-                    type="radio"
-                    bind:group={$formData.bewohnt}
-                    value="nein" />
-                  <div class="flex">
-                    <div class="indicator relative inline mr-x1" />
-                  </div>
-                  <span>Nein</span>
+                  class="option block p-x1 md:p-x0p5 flex-1 flex mb-x1
+                  items-center"
+                  class:active={$formData.bewohnt === 'nein'}
+                  for="bewohnt-nein">
+
+                  <p>Nein</p>
                 </label>
               </div>
             {/if}
@@ -606,96 +606,98 @@
             {/if}
 
             <div class="inline flex flex-wrap md:items-stretch toggle">
-              <span class="w-full flex-0">
+              <label class="w-full flex-0">
                 Wird das Equipment in einem Anhänger transportiert / gelagert? *
-              </span>
-              <label
-                class="block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
-                items-center"
-                class:active={$formData.anhaenger === 'ja'}>
-                <input
-                  type="radio"
-                  bind:group={$formData.anhaenger}
-                  value="ja" />
-                <div class="flex items-center">
-                  <div class="indicator relative inline mr-x1" />
-                </div>
-                <span>Ja</span>
               </label>
+              <input
+                type="radio"
+                bind:group={$formData.anhaenger}
+                value="ja"
+                id="anhaenger-ja" />
               <label
-                class="block p-x1 md:p-x0p5 flex-1 flex mb-x1 items-center"
-                class:active={$formData.anhaenger === 'nein'}>
-                <input
-                  type="radio"
-                  bind:group={$formData.anhaenger}
-                  value="nein" />
-                <div class="flex">
-                  <div class="indicator relative inline mr-x1" />
-                </div>
-                <span>Nein</span>
+                class="option block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
+                items-center"
+                class:active={$formData.anhaenger === 'ja'}
+                for="anhaenger-ja">
+
+                <p>Ja</p>
+              </label>
+              <input
+                type="radio"
+                bind:group={$formData.anhaenger}
+                value="nein"
+                id="anhaenger-nein" />
+              <label
+                class="option block p-x1 md:p-x0p5 flex-1 flex mb-x1
+                items-center"
+                class:active={$formData.anhaenger === 'nein'}
+                for="anhaenger-nein">
+                <p>Nein</p>
               </label>
             </div>
             <div class="inline flex flex-wrap md:items-stretch toggle">
-              <span class="w-full flex-0">
+              <label class="w-full flex-0">
                 Verdienst Du Geld mit Deiner Musik (haupt- oder nebenberuflich)?
                 *
-              </span>
-              <label
-                class="block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
-                items-center"
-                class:active={$formData.verdientGeld === 'ja'}>
-                <input
-                  type="radio"
-                  bind:group={$formData.verdientGeld}
-                  value="ja" />
-                <div class="flex items-center">
-                  <div class="indicator relative inline mr-x1" />
-                </div>
-                <span>Ja</span>
               </label>
+              <input
+                type="radio"
+                bind:group={$formData.verdientGeld}
+                value="ja"
+                id="verdient-geld-ja" />
               <label
-                class="block p-x1 md:p-x0p5 flex-1 flex mb-x1 items-center"
-                class:active={$formData.verdientGeld === 'nein'}>
-                <input
-                  type="radio"
-                  bind:group={$formData.verdientGeld}
-                  value="nein" />
-                <div class="flex">
-                  <div class="indicator relative inline mr-x1" />
-                </div>
-                <span>Nein</span>
+                class="option block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
+                items-center"
+                class:active={$formData.verdientGeld === 'ja'}
+                for="verdient-geld-ja">
+
+                <p>Ja</p>
+              </label>
+              <input
+                type="radio"
+                bind:group={$formData.verdientGeld}
+                value="nein"
+                id="verdient-geld-nein" />
+              <label
+                class="option block p-x1 md:p-x0p5 flex-1 flex mb-x1
+                items-center"
+                class:active={$formData.verdientGeld === 'nein'}
+                for="verdient-geld-nein">
+
+                <p>Nein</p>
               </label>
             </div>
             {#if $formData.verdientGeld === 'ja'}
               <div class="inline flex flex-wrap md:items-stretch toggle">
-                <span class="w-full flex-0">
-                  Möchtest Du zusätzlich ein individuelles Angebot für eine
+                <label class="w-full flex-0">
+                  Möchtest Du auch ein Angebot für eine
                   Musikerhaftpflichtversicherung? *
-                </span>
-                <label
-                  class="block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
-                  items-center"
-                  class:active={$formData.musikerhaftpflicht === 'ja'}>
-                  <input
-                    type="radio"
-                    bind:group={$formData.musikerhaftpflicht}
-                    value="ja" />
-                  <div class="flex items-center">
-                    <div class="indicator relative inline mr-x1" />
-                  </div>
-                  <span>Ja</span>
                 </label>
+                <input
+                  type="radio"
+                  bind:group={$formData.musikerhaftpflicht}
+                  value="ja"
+                  id="musikerhaftpflicht-ja" />
                 <label
-                  class="block p-x1 md:p-x0p5 flex-1 flex mb-x1 items-center"
-                  class:active={$formData.musikerhaftpflicht === 'nein'}>
-                  <input
-                    type="radio"
-                    bind:group={$formData.musikerhaftpflicht}
-                    value="nein" />
-                  <div class="flex">
-                    <div class="indicator relative inline mr-x1" />
-                  </div>
-                  <span>Nein</span>
+                  class="option block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
+                  items-center"
+                  class:active={$formData.musikerhaftpflicht === 'ja'}
+                  for="musikerhaftpflicht-ja">
+
+                  <p>Ja</p>
+                </label>
+                <input
+                  type="radio"
+                  bind:group={$formData.musikerhaftpflicht}
+                  value="nein"
+                  id="musikerhaftpflicht-nein" />
+                <label
+                  class="option block p-x1 md:p-x0p5 flex-1 flex mb-x1
+                  items-center"
+                  class:active={$formData.musikerhaftpflicht === 'nein'}
+                  for="musikerhaftpflicht-nein">
+
+                  <p>Nein</p>
                 </label>
               </div>
             {/if}
@@ -720,7 +722,7 @@
           {/if}
           <div class="grid gap-x0p5 grid-cols-2 md:flex md:justify-center ">
             <button
-              class="primary-button order-2 w-1/2"
+              class="primary-button order-2 md:w-1/2"
               disabled={!termsAccepted}
               on:click|preventDefault={handleSubmit}>
               Absenden
@@ -729,7 +731,7 @@
               type="button"
               id="prevBtn"
               on:click={prevTab}
-              class="primary-button order-1 mr-x0p5 w-1/2">
+              class="primary-button order-1 mr-x0p5 md:w-1/2">
               Zurück
             </button>
           </div>

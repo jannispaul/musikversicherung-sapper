@@ -26,12 +26,12 @@
         für I’M SOUND: T00G 2000 0000 00G0 0519
       </p>
       <p class="">
-        Die vorgeschriebenen Begleitinformationen werden immer den aktuellen
-        gesetzliche vorgeschriebenen Stand angepasst. Damit die Informationen
+        Die vorgeschriebenen Begleitinformationen werden immer an den aktuellen
+        gesetzlich vorgeschriebenen Stand angepasst. Damit die Informationen
         immer aktuell sind, habe ich diese nicht hier hinterlegt, sondern stelle
         einen Link auf die Seite der Mannheimer Versicherung zur Verfügung.
         Insoweit ist immer Aktualität garantiert. Wenn Du Fragen zum Verständnis
-        habst, kontaktiere mich bitte.
+        hast, kontaktiere mich bitte.
       </p>
       <br />
     </div>
