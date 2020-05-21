@@ -94,6 +94,7 @@
           möglich ohne die Verarbeitung Ihrer personenbezogenen Daten
           einschließlich Daten der besonderen Art (z. B. Gesundheitsdaten).
         </b>
+        <br />
         Diese benötigen wir für:
         <br />
         – die Ermittlung Ihrer Bedürfnisse hinsichtlich Versicherungsprodukten,

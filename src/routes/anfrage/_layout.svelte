@@ -22,7 +22,7 @@
         <span class="opacity-75 -ml-1">.com</span>
       </strong>
     </a>
-    <a href="tel:+4951919313199">Tel.: 05191 931 31 99</a>
+    <a href="tel:+4951919313199">T: +49 5191 931 31 99</a>
   </div>
 
 </header>

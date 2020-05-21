@@ -43,11 +43,7 @@
         ? true
         : false,
     tab2:
-      !$schadenFormData.kontoInhaber ||
-      !$schadenFormData.iban ||
-      !$schadenFormData.bank
-        ? true
-        : false
+      !$schadenFormData.kontoInhaber || !$schadenFormData.iban ? true : false
   };
 
   // Is wrapped in onMount to execute on client side not during SSR
@@ -74,8 +70,7 @@
           vorsteuerabzug: "nein",
           nachricht: undefined,
           kontoInhaber: undefined,
-          iban: undefined,
-          bank: undefined
+          iban: undefined
         }
       );
     }
@@ -194,7 +189,7 @@
             </label>
             <div class="inline flex flex-wrap toggle ">
               <span class="w-full flex-0">
-                Bist Du zum Vorsteuerabzug berechtigt? *
+                Bist Du vorsteuerabzugsberechtigt? *
               </span>
               <label
                 class="block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
@@ -281,10 +276,6 @@
             <label class="inline-flex flex-col ">
               IBAN *
               <input name="iban" bind:value={$schadenFormData.iban} />
-            </label>
-            <label class="inline-flex flex-col ">
-              Geldinstitut *
-              <input name="bank" bind:value={$schadenFormData.bank} />
             </label>
           </div>
 

@@ -26,7 +26,6 @@
       !$formData.proberaum ||
       !$formData.anhaenger ||
       !$formData.verdientGeld ||
-      !$formData.musikerhaftpflicht ||
       !termsAccepted
         ? true
         : false
@@ -432,6 +431,9 @@
                   Verdi - Fachverband Musik
                 </option>
                 <option value="Viola Gesellschaft">Viola Gesellschaft</option>
+                <option value="Union deutscher Jazzmusiker">
+                  Union deutscher Jazzmusiker
+                </option>
                 <option value="Sonstige">Sonstige</option>
               </select>
             </label>
@@ -664,37 +666,39 @@
                 <span>Nein</span>
               </label>
             </div>
-            <div class="inline flex flex-wrap md:items-stretch toggle">
-              <span class="w-full flex-0">
-                Möchtest Du zusätzlich ein individuelles Angebot für eine
-                Musikerhaftpflichtversicherung? *
-              </span>
-              <label
-                class="block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
-                items-center"
-                class:active={$formData.musikerhaftpflicht === 'ja'}>
-                <input
-                  type="radio"
-                  bind:group={$formData.musikerhaftpflicht}
-                  value="ja" />
-                <div class="flex items-center">
-                  <div class="indicator relative inline mr-x1" />
-                </div>
-                <span>Ja</span>
-              </label>
-              <label
-                class="block p-x1 md:p-x0p5 flex-1 flex mb-x1 items-center"
-                class:active={$formData.musikerhaftpflicht === 'nein'}>
-                <input
-                  type="radio"
-                  bind:group={$formData.musikerhaftpflicht}
-                  value="nein" />
-                <div class="flex">
-                  <div class="indicator relative inline mr-x1" />
-                </div>
-                <span>Nein</span>
-              </label>
-            </div>
+            {#if $formData.verdientGeld === 'ja'}
+              <div class="inline flex flex-wrap md:items-stretch toggle">
+                <span class="w-full flex-0">
+                  Möchtest Du zusätzlich ein individuelles Angebot für eine
+                  Musikerhaftpflichtversicherung? *
+                </span>
+                <label
+                  class="block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
+                  items-center"
+                  class:active={$formData.musikerhaftpflicht === 'ja'}>
+                  <input
+                    type="radio"
+                    bind:group={$formData.musikerhaftpflicht}
+                    value="ja" />
+                  <div class="flex items-center">
+                    <div class="indicator relative inline mr-x1" />
+                  </div>
+                  <span>Ja</span>
+                </label>
+                <label
+                  class="block p-x1 md:p-x0p5 flex-1 flex mb-x1 items-center"
+                  class:active={$formData.musikerhaftpflicht === 'nein'}>
+                  <input
+                    type="radio"
+                    bind:group={$formData.musikerhaftpflicht}
+                    value="nein" />
+                  <div class="flex">
+                    <div class="indicator relative inline mr-x1" />
+                  </div>
+                  <span>Nein</span>
+                </label>
+              </div>
+            {/if}
           </div>
           <label class="flex items-center my-x0p5">
             <input

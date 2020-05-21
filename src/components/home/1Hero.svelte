@@ -24,7 +24,7 @@
       grid-template-rows: repeat(12, 3.5vw);
     }
     .content {
-      grid-column: 2/14;
+      grid-column: 2/15;
       grid-row: 3/7;
     }
     .reviews {
@@ -79,8 +79,9 @@
   <h1
     class="content text-primary text-x7 md:text-x5 leading-none mt-x2 mb-x3
     md:mb-x0p5 md:mt-x0p5 md:order-0 font-medium">
-    Versicherung für Deine
+    Deine Versicherung für
     <span class="text-secondary">Instrumente</span>
+    <br />
     und
     <span class="text-secondary">Equipment</span>
   </h1>

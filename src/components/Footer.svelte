@@ -24,7 +24,7 @@
       Mannheimer Versicherung AG
     </p>
     <p class="flex-1 ">
-      SINFONIMA® und IM SOUND® sind
+      SINFONIMA® und I'M SOUND® sind
       <br />
       eingetragene Marken der
       <br />

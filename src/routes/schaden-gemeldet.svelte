@@ -15,7 +15,7 @@
           Wir haben Deine Schadenmeldung erhalten
         </h1>
         <p>
-          In Kürze solltest Du eine E-Mail-Bestätigung Deiner Schadenmeldung
+          In Kürze solltest Du eine E-Mail-Bestätigung zu Deiner Schadenmeldung
           erhalten. Falls jedoch keine E-Mail bei Dir ankommt, überprüfe bitte
           Deinen Spamfilter. Falls auch dort keine E-Mail vorhanden ist, nimm
           bitte direkten Kontakt zu mir auf:
@@ -32,10 +32,12 @@
         <h2
           class="text-primary mb-x1 text-x3 md:text-x1p5 leading-tight
           md:mb-x0p5">
-          Was passiert als nächstes?
+          Was passiert als
+          <br />
+          nächstes?
         </h2>
-        Anschließend sende ich Dir ein individuelles Angebot per Mail zu. Nimm
-        es an und Du kannst Dich entspannt und gut versichert zurücklehnen.
+        Ich melde mich kurzfristig bei Dir und wir stimmen uns über die weitere
+        Vorgehensweise ab.
       </div>
     </div>
   </section>

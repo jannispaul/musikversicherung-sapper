@@ -15,7 +15,7 @@
     </h3>
     <p class="text-x2 mb-x1 md:text-x1 md:mb-x0p5">
       SINFONIMA für klassische Instrumente und I’M SOUND für elektronisches
-      Equipment – bieten eine sehr umfassende Allgefahrendeckung. Mit der
+      Equipment bieten eine sehr umfassende Allgefahrendeckung. Mit der
       Instrumentenversicherung und der Equipmentversicherung sind nahezu alle
       Beschädigungs- oder Verlustrisiken abgesichert.
     </p>
