@@ -4,12 +4,12 @@ faq10:
 faq13:
   question: "Was ist bei Auslandsreien zu beachten?"
   answer: "Dazu haben wir <a preload href='/Empfehlungen-zu-Auslandsreisen.pdf' class='underline' target='_blank' rel='noopener noreferrer' n>diesen Ratgeber</a>."
-faq11:
-  question: "Muss ich einen Verleih anmelden?"
-  answer: "Nein, es sei denn der Verleih erfolgt gewerblich."
 faq12:
   question: "Ist mein Instrument auch versichert, wenn ich es verleihe?"
   answer: "Ja."
+faq11:
+  question: "Muss ich einen Verleih anmelden?"
+  answer: "Nein, es sei denn der Verleih erfolgt gewerblich."
 faq01:
   question: "Besteht auch im Auto Versicherungsschutz?"
   answer: "Ja. Es gibt jedoch eine Höchstentschädigung von 50.000 € (SINFONIMA) und 100.000 € (I’M SOUND). Voraussetzung ist die Aufbewahrung in einem von außen nicht einsehbaren Koffer- oder Laderaum."
@@ -17,18 +17,18 @@ faq01:
 faq05:
   question: "Wie lange bin ich an den Vertrag gebunden?"
   answer: "Der Versicherungsvertrag wird zunächst für ein Jahr geschlossen. Er verlängert sich um ein weiteres Jahr, wenn er nicht drei Monate vor Ablauf gekündigt wird."
-faq08:
-  question: "Kann ich mir für die Reparaturdauer ein Ersatzinstrument leihen?"
-  answer: "Ja, die Kosten für ein gleichwertiges Leihinstrument werden im Rahmen der Versicherung ebenfalls ersetzt."
+  faq07:
+  question: "Was muss ich im Schadenfall tun?"
+  answer: "Informiere mich möglichst unverzüglich telefonisch oder per Email. Sinnvoll ist es, wenn Du mir dann bereits Informationen zur ungefähren Höhe des Schadens geben kannst. In den meisten Fällen kann ich Dir eine sofortige Reparaturfreigabe bestätigen."
 faq04:
   question: "Was passiert, wenn ich mein Instrument verkaufe oder zurückgebe?"
   answer: "Der Versicherungsvertrag wird aufgehoben. Zuviel gezahlte Beiträge werden erstattet. Natürlich kann der Versicherungsschutz auch auf ein Folgeinstrument übertragen werden."
 faq06:
   question: "Was tue ich, wenn ich die Reparaturrechnung habe?"
   answer: "Im Regelfall bezahlst Du diese und sendest die Rechnung per Email oder Fax an mich. Ich rechne dann mit Dir ab. Auf Wunsch kann ich auch direkt an den Reparaturbetrieb / Lieferanten zahlen."
-faq07:
-  question: "Was muss ich im Schadenfall tun?"
-  answer: "Informiere mich möglichst unverzüglich telefonisch oder per Email. Sinnvoll ist es, wenn Du mir dann bereits Informationen zur ungefähren Höhe des Schadens geben kannst. In den meisten Fällen kann ich Dir eine sofortige Reparaturfreigabe bestätigen."
+faq08:
+  question: "Kann ich mir für die Reparaturdauer ein Ersatzinstrument leihen?"
+  answer: "Ja, die Kosten für ein gleichwertiges Leihinstrument werden im Rahmen der Versicherung ebenfalls ersetzt."
 faq09:
   question: "Wie ermittle ich die richtige Versicherungssumme?"
   answer: >

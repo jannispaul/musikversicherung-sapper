@@ -35,7 +35,7 @@
   <label
     class="flex md:flex-grow flex-col items-start flex-none md:flex-auto w-full
     md:w-1/2 md:mr-x0p5">
-    Position {index + 1}
+    Instrument/Equipment {index + 1}
     <input
       name="instrument"
       type="text"
@@ -46,7 +46,7 @@
   <label
     class="flex flex-col flex-grow-0 flex-1 order-1 mr-x0p5 w-2/6 md:w-auto
     md:w-1/6">
-    Wert
+    Wert in €
     <input
       type="number"
       name="value"

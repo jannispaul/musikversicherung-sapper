@@ -34,7 +34,7 @@
           md:mb-x0p5">
           Was passiert als
           <br />
-          nächstes?
+          Nächstes?
         </h2>
         Ich melde mich kurzfristig bei Dir und wir stimmen uns über die weitere
         Vorgehensweise ab.

@@ -49,11 +49,11 @@
   }
 </style>
 
-<label>
+<label for="fileUpload">
   <slot />
 </label>
 <div
-  class="drop-area flex flex-col justify-center items-center"
+  class="drop-area flex flex-col justify-center items-center mt-x0p5"
   class:highlight={isDraggingOver === true}
   on:dragenter|preventDefault={handleDragEnter}
   on:dragleave|preventDefault={handleDragLeave}
@@ -66,7 +66,7 @@
     accept="image/*"
     on:change={handleFiles}
     class="hidden" />
-  <label class="primary-button cursor-pointer" for="fileUpload">
+  <label class="primary-button cursor-pointer px-x1" for="fileUpload">
     Datei auswählen
   </label>
   <p>oder per Drag and Drop</p>

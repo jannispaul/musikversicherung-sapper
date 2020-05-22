@@ -112,7 +112,7 @@
   :global(.primary-button),
   .add-instrument {
     background: rgba(107, 70, 193, 0.15);
-    padding: 3vw 1.5vw 2.4vw 1.5vw;
+    padding: 3vw 3vw 2.4vw 3vw;
   }
 
   :global(.primary-button:hover:not(:disabled)),
@@ -203,7 +203,7 @@
   @media (min-width: 768px) {
     :global(.primary-button),
     .add-instrument {
-      padding: 1.6vw 1.5vw 1.5vw 1.5vw;
+      padding: 1.6vw 4vw 1.5vw 4vw;
     }
     /* Input styles */
     :global(input) {
@@ -232,6 +232,9 @@
     :global(.toggle > label.option) {
       height: 8vw;
       border: 0.2vw solid #6b46c1;
+    }
+    :global(.toggle > label.option.small) {
+      height: 4.1vw;
     }
 
     .primary-button:hover:not(:disabled) {
@@ -451,14 +454,14 @@
           {/if}
         </div>
         {#if errors.tab1}
-          <div class="text-warning mb-x1 md:mb-x0p5 md:text-center">
+          <div class="text-warning mt-x0p5 md:text-center">
             Bitte fülle alle mit * markierten Felder aus.
           </div>
         {/if}
       </div>
       <div
         class="grid gap-x0p5 grid-cols-2 md:flex md:justify-center md:w-2/3
-        md:m-auto mt-x1">
+        mt-x0p5 mx-auto">
         <button
           type="button"
           id="nextBtn"
@@ -490,23 +493,23 @@
           </div>
           <button
             type="button"
-            class="t-x1 p-x1 w-full -mt-x2 add-instrument"
+            class="t-x1 p-x1 w-full mb-x1 add-instrument"
             on:click={addInstrument}>
             Weiteres Instrument / Zubehör hinzufügen
           </button>
-          <label for="" class="mt-x2 block">
+          <label for="" class=" block">
             Anmerkungen & Fragen
             <textarea
               bind:value={$formData.nachricht}
               rows="4"
               class="w-full border-primary" />
           </label>
-          <label class="flex items-center my-x0p5 cursor-pointer">
+          <label class="flex items-center mt-x0p5 mb-x1 cursor-pointer">
             <input
               type="checkbox"
               name="terms"
               bind:checked={termsAccepted}
-              class="w-1/6 mr-x1 md:mr-x0p5 " />
+              class="w-1/6 md:w-auto mr-x1 md:mr-x0p5 " />
             <span class="">
               Ich akzeptiere die Übertragung und Speicherung meiner Daten zum
               Zwecke des angebotenen Services.
@@ -708,12 +711,12 @@
               </div>
             {/if}
           </div>
-          <label class="flex items-center my-x0p5">
+          <label class="flex items-center mb-x1">
             <input
               type="checkbox"
               name="terms"
               bind:checked={termsAccepted}
-              class="w-1/6 mr-x1 md:mr-x0p5" />
+              class="w-1/6 md:w-auto mr-x1 md:mr-x0p5" />
             <span>
               Ich akzeptiere die Übertragung und Speicherung meiner Daten zum
               Zwecke des angebotenen Services.
@@ -721,7 +724,7 @@
             </span>
           </label>
           {#if errors.tab2}
-            <div class="text-warning">
+            <div class="text-warning mb-x0p5 md:text-center">
               Bitte fülle alle mit * markierten Felder aus und akzeptiere die
               Bedingungen.
             </div>

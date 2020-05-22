@@ -36,8 +36,7 @@
     </h3>
     <p class="text-x2 mb-x1 md:text-x0p5 md:mb-0 md:text-light ">
       Wenn Du wissen willst, mit wem Du es zu tun hast, schau Dir dieses kleine
-      Imagevideo an. Hier erfährst Du, wer ich bin und was mich antreibt. Viel
-      Spaß!
+      Video an. Hier erfährst Du, wer ich bin und was mich antreibt. Viel Spaß!
     </p>
   </div>
 

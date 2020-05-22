@@ -8,14 +8,24 @@
   let currentTab = 0;
   let termsAccepted = false;
   let files = [];
+  let scrollPositionY;
+
   $: {
     // console.log(files);
     console.log($schadenFormData.file);
   }
+  // Scroll to top of page
+  let resetScrollPosition = () => (scrollPositionY = 0);
 
   // Setup functions to navigate between tabs
-  let nextTab = () => currentTab++;
-  let prevTab = () => currentTab--;
+  function nextTab() {
+    currentTab++;
+    resetScrollPosition();
+  }
+  function prevTab() {
+    currentTab--;
+    resetScrollPosition();
+  }
 
   // Create store
   let schadenFormData = writable({});
@@ -122,6 +132,8 @@
 <svelte:head>
   <title>Anfrage</title>
 </svelte:head>
+<svelte:window bind:scrollY={scrollPositionY} />
+
 <Layout>
   <!-- {#if process.browser} -->
   <form id="form" method="post" class="text-x2 md:text-x1 lg:text-x0p5 px-x1p5">
@@ -191,32 +203,31 @@
               <span class="w-full flex-0">
                 Bist Du vorsteuerabzugsberechtigt? *
               </span>
+              <input
+                type="radio"
+                bind:group={$schadenFormData.vorsteuerabzug}
+                value="ja"
+                name="vorsteuerabzug"
+                id="vorsteuerabzug-ja" />
               <label
-                class="block p-x1 md:p-x0p5 flex-1 flex mr-x0p5 mb-x1
+                class=" option small block flex-1 flex mr-x0p5 mb-x1
                 items-center"
+                for="vorsteuerabzug-ja"
                 class:active={$schadenFormData.vorsteuerabzug === 'ja'}>
-                <input
-                  type="radio"
-                  bind:group={$schadenFormData.vorsteuerabzug}
-                  value="ja"
-                  name="vorsteuerabzug" />
-                <div class="flex items-center">
-                  <div class="indicator relative inline mr-x1" />
-                </div>
-                <span>Ja</span>
+
+                <p>Ja</p>
               </label>
+              <input
+                type="radio"
+                bind:group={$schadenFormData.vorsteuerabzug}
+                value="nein"
+                name="vorsteuerabzug"
+                id="vorsteuerabzug-nein" />
               <label
-                class="block p-x1 md:p-x0p5 flex-1 flex mb-x1 items-center"
-                class:active={$schadenFormData.vorsteuerabzug === 'nein'}>
-                <input
-                  type="radio"
-                  bind:group={$schadenFormData.vorsteuerabzug}
-                  value="nein"
-                  name="vorsteuerabzug" />
-                <div class="flex">
-                  <div class="indicator relative inline mr-x1" />
-                </div>
-                <span>Nein</span>
+                class="option small block flex-1 flex mb-x1 items-center"
+                class:active={$schadenFormData.vorsteuerabzug === 'nein'}
+                for="vorsteuerabzug-nein">
+                <p>Nein</p>
               </label>
             </div>
             <label class="inline-flex flex-col ">
@@ -231,7 +242,7 @@
                 name="gegenstand"
                 bind:value={$schadenFormData.gegenstand} />
             </label>
-            <label for="" class=" block col-span-2">
+            <label for="" class=" block col-span-2 mb-x1">
               Kurze Schadenschilderung *
               <textarea
                 name="schilderung"
@@ -241,19 +252,17 @@
             </label>
 
             {#if errors.tab1}
-              <div class="text-warning col-span-2 text-center">
+              <div class="text-warning col-span-2 md:text-center mb-x1">
                 Bitte fülle alle mit * markierten Felder aus.
               </div>
             {/if}
           </div>
-          <div
-            class="grid gap-x0p5 grid-cols-2 md:flex md:justify-center md:w-2/3
-            md:m-auto">
+          <div class="md:flex md:justify-center md:w-2/3 md:m-auto">
             <button
               type="button"
               id="nextBtn"
               on:click={nextTab}
-              class="primary-button order-2 w-1/2"
+              class="primary-button order-2 w-full"
               disabled={errors.tab1}>
               Weiter
             </button>
@@ -281,7 +290,7 @@
 
           <FileUpload bind:files>
             Wenn schon eine Rechnung vorliegt oder Du weitere Unterlagen (Fotos,
-            Kostenvoranschlag,...) beifügen möchtest, kannst Du sie hier
+            Kostenvoranschlag, …) beifügen möchtest, kannst Du sie hier
             hochladen.
           </FileUpload>
 
@@ -308,7 +317,7 @@
           <div class="grid gap-x0p5 grid-cols-2 md:flex md:justify-center ">
             <button
               type="submit"
-              class="primary-button order-2 w-1/2"
+              class="primary-button order-2 w-full"
               disabled={!termsAccepted}
               on:click|preventDefault={handleSubmit}>
               Absenden
@@ -317,7 +326,7 @@
               type="button"
               id="prevBtn"
               on:click={prevTab}
-              class="primary-button order-1 mr-x0p5 w-1/2">
+              class="primary-button order-1 mr-x0p5 w-full">
               Zurück
             </button>
           </div>

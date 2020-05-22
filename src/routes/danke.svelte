@@ -31,7 +31,7 @@
         <h2
           class="text-primary mb-x1 text-x3 md:text-x1p5 leading-tight
           md:mb-x0p5">
-          Was passiert als nächstes?
+          Was passiert als Nächstes?
         </h2>
         Anschließend sende ich Dir ein individuelles Angebot per Mail zu. Nimm
         es an und Du kannst Dich entspannt und gut versichert zurücklehnen.
