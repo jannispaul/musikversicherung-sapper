@@ -14,32 +14,32 @@ let months = [
   "Sept",
   "Okt",
   "Nov",
-  "Dez"
+  "Dez",
 ];
 
 export async function get(req, res, next) {
   // If contents is undefined or in production
   if (!contents || process.env.NODE_ENV !== "production") {
     // Call getReviews and the results
-    const reviews = getReviews().map(review => ({
+    const reviews = getReviews().map((review) => ({
       name: review.name,
       rating: review.rating,
       microDataDate: review.date.slice(0, 10),
       date: `${review.date.slice(8, 10)}. ${
-        months[parseInt(review.date.slice(5, 7))]
+        months[parseInt(review.date.slice(5, 7)) - 1]
       } ${review.date.slice(0, 4)}`,
-      review: review.review
+      review: review.review,
     }));
 
     const reviewData = {
       count: reviews.length,
       averageRating: (
         reviews
-          .map(i => i.rating)
+          .map((i) => i.rating)
           .reduce((a, b) => parseInt(a) + parseInt(b), 0) / reviews.length
       ).toFixed(2),
       recentReviews: reviews.slice(0, 3),
-      allReviews: reviews
+      allReviews: reviews,
     };
 
     // If reviews is NOT null set headers and stringify
