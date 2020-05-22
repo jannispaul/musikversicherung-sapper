@@ -246,6 +246,10 @@
 
 <svelte:head>
   <title>Anfrage</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+    user-scalable=0" />
 </svelte:head>
 <!-- {#if process.browser} -->
 <form id="form" method="post" class="text-x2 md:text-x1 lg:text-x0p5 px-x1p5">
@@ -294,6 +298,8 @@
           <label class="flex flex-col">
             Gesamtwert der Instrumente in € *
             <input
+              type="number"
+              pattern="\d*"
               name="gesamtWert"
               bind:value={$formData.gesamtWert}
               autofocus />
@@ -340,7 +346,7 @@
           </label>
           <label class="inline-flex flex-col ">
             Telefonnummer für Rückfragen
-            <input name="telefon" bind:value={$formData.telefon} />
+            <input type="tel" name="telefon" bind:value={$formData.telefon} />
           </label>
           <label class="inline-flex flex-col ">
             Status *
@@ -500,8 +506,8 @@
               type="checkbox"
               name="terms"
               bind:checked={termsAccepted}
-              class="mr-x1 md:mr-x0p5 " />
-            <span>
+              class="w-1/6 mr-x1 md:mr-x0p5 " />
+            <span class="">
               Ich akzeptiere die Übertragung und Speicherung meiner Daten zum
               Zwecke des angebotenen Services.
               <a href="/datenschutz" class="underline">Mehr erfahren</a>
@@ -593,7 +599,7 @@
                 </label>
               </div>
             {/if}
-            {#if $formData.bewohnt === 'nein'}
+            {#if $formData.bewohnt === 'nein' && $formData.proberaum === 'ja'}
               <label class="inline-flex flex-col justify-end w-full mb-x1">
                 Bitte beschreibe kurz die Örtlichkeit und Sicherungen des
                 Proberaums *
@@ -707,7 +713,7 @@
               type="checkbox"
               name="terms"
               bind:checked={termsAccepted}
-              class="mr-x1 md:mr-x0p5" />
+              class="w-1/6 mr-x1 md:mr-x0p5" />
             <span>
               Ich akzeptiere die Übertragung und Speicherung meiner Daten zum
               Zwecke des angebotenen Services.

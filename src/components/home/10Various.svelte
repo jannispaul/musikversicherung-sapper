@@ -35,9 +35,9 @@
     <p>
       Nach Erhalt Deiner Online-Anfrage bekommst Du in der Regel noch am selben,
       spätestens am nächsten Arbeitstag Dein individuelles Angebot zur
-      Instrumentenversicherung. Wenn Du das Angebot annehmen möchten, reicht ein
-      kurzer Hinweis per Email. Wenn nichts weiter zu klären ist, erhältst Du
-      dann umgehend eine Bestätigung über sofortigen Versicherungsschutz. Der
+      Instrumentenversicherung. Wenn Du das Angebot annehmen möchtest, reicht
+      ein kurzer Hinweis per Email. Wenn nichts weiter zu klären ist, erhältst
+      Du dann umgehend eine Bestätigung über sofortigen Versicherungsschutz. Der
       dazugehörige Versicherungsvertrag folgt binnen weniger Tage per Post.
     </p>
 

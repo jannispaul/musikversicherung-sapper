@@ -13,13 +13,7 @@
     height: 9.5vw;
     margin-bottom: 4vw;
   }
-  /* .toggle > label {
-    min-height: fit-content;
-    padding: 1vw 1.5vw;
-    margin-bottom: 2vw;
-    margin-right: -0.4vw;
-    @apply border-primary;
-  } */
+
   @media (min-width: 768px) {
     .toggle > label {
       padding: 0 1vw;
@@ -53,7 +47,11 @@
     class="flex flex-col flex-grow-0 flex-1 order-1 mr-x0p5 w-2/6 md:w-auto
     md:w-1/6">
     Wert
-    <input name="value" bind:value={instrument.value} />
+    <input
+      type="number"
+      name="value"
+      pattern="\d*"
+      bind:value={instrument.value} />
   </label>
   <div class="toggle flex order-2 md:order-2">
     <input
