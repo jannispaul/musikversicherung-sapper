@@ -98,22 +98,24 @@
   <!-- </div> -->
   <div class="z-20 image-piano relative">
     <Image
-      sizes="(max-width: 2160px) 100vw, 2160px"
-      srcset={`/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_200.jpg 200w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_745.jpg 745w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1136.jpg 1136w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1381.jpg 1381w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1590.jpg 1590w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1779.jpg 1779w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1933.jpg 1933w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2084.jpg 2084w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2128.jpg 2128w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2160.jpg 2160w`}
       src="/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2160.jpg"
-      alt="pianoplayer" />
+      sizes="(max-width: 768px) 100vw, (min-width: 769px) 22vw"
+      srcset={`/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_200.jpg 200w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_745.jpg 745w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1136.jpg 1136w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1381.jpg 1381w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1590.jpg 1590w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1779.jpg 1779w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1933.jpg 1933w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2084.jpg 2084w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2128.jpg 2128w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2160.jpg 2160w`}
+      alt="Stagepiano mit Schlagzeug im Hintergrund" />
   </div>
   <div class="z-10 image-mixer hidden md:inline">
     <Image
+      sizes="(min-width: 769px) 33vw"
       srcset={`/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_200.jpg 200w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_601.jpg 601w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_879.jpg 879w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1117.jpg 1117w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1330.jpg 1330w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1520.jpg 1520w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1694.jpg 1694w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1875.jpg 1875w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2057.jpg 2057w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.jpg 2160w`}
       src="/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.jpg"
-      alt="mixer" />
+      alt="Live-Mischpult mit Menschenmenge im Hintergrund" />
   </div>
   <div class="z-30 image-sax hidden md:inline">
     <Image
+      sizes="(min-width: 769px) 19vw"
       srcset={`/images/sax_lcabmf/sax_lcabmf_c_scale,w_200.jpg 200w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_636.jpg 636w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_923.jpg 923w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_1160.jpg 1160w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_1374.jpg 1374w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_1567.jpg 1567w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_1746.jpg 1746w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_1921.jpg 1921w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_2092.jpg 2092w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_2160.jpg 2160w`}
       src="/images/sax_lcabmf/sax_lcabmf_c_scale,w_2160.jpg"
-      alt="Saxophon" />
+      alt="Saxophon mit anderen Musikern im Hintergrund" />
   </div>
 
   <div

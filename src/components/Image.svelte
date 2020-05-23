@@ -2,6 +2,7 @@
   export let src = "";
   export let srcset = "";
   export let alt = "";
+  export let sizes = "";
   // import { onMount } from "svelte";
 
   // Change file path from .jpg to .webp so only jpg paths need to be passed in
@@ -117,7 +118,7 @@
 </style>
 
 <!-- <img {src} {alt} /> -->
-<picture class="lazy lazy-initial">
-  <source sizes="(max-width: 4000px) 100vw, 4000px" {srcsetWebp} {alt} />
-  <img sizes="(max-width: 4000px) 100vw, 4000px" {srcset} {src} {alt} />
+<picture>
+  <source {sizes} {srcsetWebp} {alt} />
+  <img {sizes} {srcset} {src} {alt} />
 </picture>
