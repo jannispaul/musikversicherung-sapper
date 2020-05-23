@@ -2,9 +2,9 @@
   import Layout from "./_layouts/layout.svelte";
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
   <meta name="robots" content="noindex" />
-</svelte:head>
+</svelte:head> -->
 
 <Layout>
   <section class="px-x1p5 mb-x1 text-x0p75">

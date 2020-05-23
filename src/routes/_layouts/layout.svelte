@@ -22,18 +22,9 @@
   }
 </style>
 
-<!-- <script context="module">
-  // export async function preload({ params, query }) {
-  //   return this.fetch(`reviews.json`)
-  //     .then(r => r.json())
-  //     .then(reviewData => {
-  //       return { reviewData };
-  //     });
-  // }
-</script> -->
-<svelte:head>
+<!-- <svelte:head>
   <meta name="robots" content="noindex" />
-</svelte:head>
+</svelte:head> -->
 <CookieNotice />
 <Nav {segment} />
 
