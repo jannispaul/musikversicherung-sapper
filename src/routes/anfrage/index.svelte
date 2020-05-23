@@ -337,19 +337,37 @@
           </label>
           <label class="inline-flex flex-col ">
             Vorname *
-            <input name="vorname" bind:value={$formData.vorname} required />
+            <input
+              type="text"
+              name="fname"
+              bind:value={$formData.vorname}
+              autocomplete="given-name"
+              required />
           </label>
           <label class="inline-flex flex-col ">
             Nachname *
-            <input name="nachname" bind:value={$formData.nachname} required />
+            <input
+              type="text"
+              name="lname"
+              bind:value={$formData.nachname}
+              autocomplete="family-name"
+              required />
           </label>
           <label class="inline-flex flex-col ">
             E-Mail *
-            <input name="email" bind:value={$formData.email} required />
+            <input
+              name="email"
+              bind:value={$formData.email}
+              autocomplete="email"
+              required />
           </label>
           <label class="inline-flex flex-col ">
             Telefonnummer für Rückfragen
-            <input type="tel" name="telefon" bind:value={$formData.telefon} />
+            <input
+              type="tel"
+              name="telefon"
+              bind:value={$formData.telefon}
+              autocomplete="tel" />
           </label>
           <label class="inline-flex flex-col ">
             Status *

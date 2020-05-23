@@ -49,10 +49,42 @@
   </head>
 
   <body>
-    <!-- The application will be rendered inside this element,
-	     because `src/client.js` references it -->
-    <div id="sapper">%sapper.html%</div>
+    <!-- Browser not supported message -->
+    <div
+      id="unsupported-browser"
+      class="z-10 bg-secondary text-x2 md:text-x0p75 lg:text-x0p25 text-white text-center w-full px-x0p25 py-x1 md:p-x0p25"
+      hidden
+    >
+      Dein Browser wird leider nicht unterstützt. Bitte
+      <a href="https://browser-update.org/update.html" class="underline"
+        >informiere Dich</a
+      >
+      und aktualisiere ihn.
+    </div>
 
+    <!-- The application will be rendered inside this element,
+     because `src/client.js` references it -->
+    <div id="sapper">%sapper.html%</div>
+    <script>
+      (function () {
+        "use strict";
+        if (
+          !(
+            "function" == typeof Blob &&
+            "undefined" != typeof Intl &&
+            "undefined" != typeof MutationObserver &&
+            "undefined" != typeof URLSearchParams &&
+            "undefined" != typeof WebSocket &&
+            "undefined" != typeof IntersectionObserver &&
+            "entries" in FormData.prototype &&
+            "append" in Element.prototype
+          )
+        ) {
+          const e = document.getElementById("unsupported-browser");
+          e && e.removeAttribute("hidden");
+        }
+      })();
+    </script>
     <!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->

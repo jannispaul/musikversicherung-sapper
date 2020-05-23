@@ -35,7 +35,7 @@
   <label
     class="flex md:flex-grow flex-col items-start flex-none md:flex-auto w-full
     md:w-1/2 md:mr-x0p5">
-    Instrument/Equipment {index + 1}
+    Instrument / Zubehör {index + 1}
     <input
       name="instrument"
       type="text"

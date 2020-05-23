@@ -153,11 +153,17 @@
             </label>
             <label class="inline-flex flex-col ">
               Vorname *
-              <input name="vorname" bind:value={$schadenFormData.vorname} />
+              <input
+                name="fname"
+                bind:value={$schadenFormData.vorname}
+                autocomplete="given-name" />
             </label>
             <label class="inline-flex flex-col ">
               Nachname *
-              <input name="nachname" bind:value={$schadenFormData.nachname} />
+              <input
+                name="lname"
+                bind:value={$schadenFormData.nachname}
+                autocomplete="family-name" />
             </label>
             <!-- <label class="inline-flex flex-col ">
               Straße *
@@ -173,11 +179,17 @@
             </label> -->
             <label class="inline-flex flex-col ">
               E-Mail *
-              <input name="email" bind:value={$schadenFormData.email} />
+              <input
+                name="email"
+                bind:value={$schadenFormData.email}
+                autocomplete="email" />
             </label>
             <label class="inline-flex flex-col ">
               Telefonnummer *
-              <input name="telefon" bind:value={$schadenFormData.telefon} />
+              <input
+                name="telefon"
+                bind:value={$schadenFormData.telefon}
+                autocomplete="tel" />
             </label>
             <label class="inline-flex flex-col ">
               Versicherungsscheinnummer *

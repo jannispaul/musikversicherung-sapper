@@ -1,0 +1,17 @@
+# Redirect domain aliases to primary domain
+https://www.musikversicherung.com/* https://musikversicherung.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+# https://musikversicherung.netlify.app/* https://musikversicherung.com/:splat 301!
+
+
+
+# Redirect to form page 
+#/online-anfrageformular/ /anfrage  301
+
+# Redirect FAQ pages
+#/faq-items/page/2/ /faq  301
+
+
+# Old pages that got deleted
+# https://www.belmot-oldtimerversicherung.de/oldtimer-versicherung/  / 410

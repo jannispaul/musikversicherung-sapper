@@ -3,17 +3,11 @@
 </script>
 
 <style>
-  sup {
-    top: -3vw;
+  .sup {
+    top: 1vw;
     font-size: 50%;
-    margin-left: -2vw;
-  }
-  @media (min-width: 768px) {
-    sup {
-      top: 0;
-      font-size: 100%;
-      margin-left: -2vw;
-    }
+    margin-left: -1.5vw;
+    vertical-align: super;
   }
 </style>
 
@@ -27,14 +21,14 @@
       md:mr-x1">
       <h2 class="text-white uppercase text-x7 md:text-x5 leading-tighter">
         Sinfonima
-        <sup>®</sup>
+        <span class="sup">®</span>
       </h2>
       <p>Instrumentenversicherung für klassische Instrumente</p>
     </div>
     <div class="px-x3 py-x2 md:px-x1 md:py-x1 bg-gradient">
       <h2 class="text-white uppercase text-x7 md:text-x5 leading-tighter ">
         I’m sound
-        <sup>®</sup>
+        <span class="sup">®</span>
       </h2>
       <p>Rundumschutz für elektronisches Musikequipment</p>
     </div>

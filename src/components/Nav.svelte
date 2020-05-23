@@ -90,7 +90,7 @@
           rel="prefetch"
           class:active={segment === 'index'}
           href="."
-          class="text-x3 text-primary md:text-x1 lg:text-x0p5 mt-1">
+          class="text-x3 text-primary md:text-x1 lg:text-x0p5 mt-1 ">
           <strong>
             Musikversicherung
             <span class="opacity-75 -ml-1">.com</span>
@@ -123,7 +123,7 @@
               class:active={segment === 'faq'}
               href="faq"
               class="block mt-4 md:inline-block md:mt-0 text-primary
-              hover:text-primary mr-x0p5">
+              hover:text-primary mr-x0p5 hover:underline">
               FAQ
             </a>
             <a
@@ -131,7 +131,7 @@
               class:active={segment === 'schaden-melden'}
               href="schaden-melden"
               class="block mt-4 md:inline-block md:mt-0 text-primary
-              hover:text-primary mr-x0p5">
+              hover:underline mr-x0p5 ">
               Schaden melden
             </a>
             <a
@@ -139,7 +139,7 @@
               class:active={segment === 'kontakt'}
               href="kontakt"
               class="block mt-4 md:inline-block md:mt-0 text-primary
-              hover:text-primary mr-x0p5">
+              hover:underline mr-x0p5">
               Kontakt
             </a>
           </div>

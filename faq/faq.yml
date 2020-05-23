@@ -13,11 +13,10 @@ faq11:
 faq01:
   question: "Besteht auch im Auto Versicherungsschutz?"
   answer: "Ja. Es gibt jedoch eine Höchstentschädigung von 50.000 € (SINFONIMA) und 100.000 € (I’M SOUND). Voraussetzung ist die Aufbewahrung in einem von außen nicht einsehbaren Koffer- oder Laderaum."
-
 faq05:
   question: "Wie lange bin ich an den Vertrag gebunden?"
   answer: "Der Versicherungsvertrag wird zunächst für ein Jahr geschlossen. Er verlängert sich um ein weiteres Jahr, wenn er nicht drei Monate vor Ablauf gekündigt wird."
-  faq07:
+faq07:
   question: "Was muss ich im Schadenfall tun?"
   answer: "Informiere mich möglichst unverzüglich telefonisch oder per Email. Sinnvoll ist es, wenn Du mir dann bereits Informationen zur ungefähren Höhe des Schadens geben kannst. In den meisten Fällen kann ich Dir eine sofortige Reparaturfreigabe bestätigen."
 faq04:
