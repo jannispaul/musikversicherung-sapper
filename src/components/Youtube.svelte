@@ -20,7 +20,6 @@
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     }
     window.onYouTubeIframeAPIReady = function() {
-      //console.log('hello')
       window.dispatchEvent(new Event("YouTubeIframeAPIReady"));
     };
     window.addEventListener("YouTubeIframeAPIReady", function() {
