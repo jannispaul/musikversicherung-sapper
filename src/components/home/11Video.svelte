@@ -1,5 +1,9 @@
+<script>
+  import Youtube from "../Youtube.svelte";
+</script>
+
 <style>
-  iframe {
+  :global(.yt-component) {
     width: 60vw;
     height: 34vw;
   }
@@ -7,7 +11,7 @@
     .bg-gradient-secondary {
       background: none;
     }
-    iframe {
+    :global(.yt-component) {
       width: 100vw;
       height: 58vw;
     }
@@ -15,14 +19,14 @@
 </style>
 
 <section class=" px-x1p5 pb-x3 md:py-x2 w-100 md:flex relative items-center">
-
-  <iframe
+  <Youtube videoId="F2IZ9GeyaSs" class="-mr-x1p5 -ml-x1p5 mb-x2 md:m-0" />
+  <!-- <iframe
     src="https://www.youtube-nocookie.com/embed/F2IZ9GeyaSs?rel=0"
     title="Heiner Blaskewitz von B!-Das Versicherungsbüro stellt sich vor"
     frameborder="0"
     allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
-    class="-mr-x1p5 -ml-x1p5 mb-x2 md:m-0" />
+    class="-mr-x1p5 -ml-x1p5 mb-x2 md:m-0" /> -->
 
   <div
     class="bg-gradient-secondary md:p-x1 md:relative md:z-10 md:flex flex-col
