@@ -119,6 +119,7 @@
 
 <!-- <img {src} {alt} /> -->
 <picture>
-  <source {sizes} {srcsetWebp} {alt} />
-  <img {sizes} {srcset} {src} {alt} loading="lazy" />
+  <source {sizes} srcset={srcsetWebp} {alt} />
+  <source {sizes} {srcset} {alt} />
+  <img {sizes} {src} {alt} loading="lazy" />
 </picture>
