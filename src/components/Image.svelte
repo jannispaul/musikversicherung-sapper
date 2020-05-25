@@ -120,5 +120,5 @@
 <!-- <img {src} {alt} /> -->
 <picture>
   <source {sizes} {srcsetWebp} {alt} />
-  <img {sizes} {srcset} {src} {alt} />
+  <img {sizes} {srcset} {src} {alt} loading="lazy" />
 </picture>

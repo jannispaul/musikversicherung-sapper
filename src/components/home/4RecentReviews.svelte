@@ -74,16 +74,16 @@
   <div class="z-20 image-drums relative hidden md:inline-block">
     <Image
       sizes="(min-width: 769px) 37vw, (max-width: 768px) 100vw"
-      srcset={`/images/drums_ulbs6v/drums_ulbs6v_c_scale,w_200.jpg 200w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_630.jpg 630w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_914.jpg 914w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_1155.jpg 1155w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_1343.jpg 1343w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_1543.jpg 1543w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_1721.jpg 1721w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_1906.jpg 1906w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_2078.jpg 2078w, /images/drums_ulbs6v/drums_ulbs6v_c_scale,w_2160.jpg 2160w`}
-      src="/images/drums_ulbs6v/drums_ulbs6v_c_scale,w_2160.jpg"
-      alt="drummer" />
+      srcset=" images/violins_kzmb3h/violins_kzmb3h_c_scale,w_200.jpg 200w,
+      images/violins_kzmb3h/violins_kzmb3h_c_scale,w_429.jpg 429w,
+      images/violins_kzmb3h/violins_kzmb3h_c_scale,w_609.jpg 609w,
+      images/violins_kzmb3h/violins_kzmb3h_c_scale,w_761.jpg 761w,
+      images/violins_kzmb3h/violins_kzmb3h_c_scale,w_895.jpg 895w,
+      images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1017.jpg 1017w,
+      images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1142.jpg 1142w,
+      images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1253.jpg 1253w,
+      images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1263.jpg 1263w"
+      src="images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1263.jpg"
+      alt="Violinen-Sektion eines Orchesters" />
   </div>
-  <div class="z-30 image-guitar relative hidden md:inline-block">
-    <Image
-      sizes="(min-width: 769px) 19vw, (max-width: 768px) 100vw"
-      srcset={`/images/guitar_k2skaw/guitar_k2skaw_c_scale,w_200.jpg 200w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_704.jpg 704w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1013.jpg 1013w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1234.jpg 1234w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1425.jpg 1425w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1605.jpg 1605w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1774.jpg 1774w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_1940.jpg 1940w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_2100.jpg 2100w, /images/guitar_k2skaw/guitar_k2skaw_c_scale,w_2160.jpg 2160w`}
-      src="/images/guitar_k2skaw/guitar_k2skaw_c_scale,w_2160.jpg"
-      alt="guitar" />
-  </div>
-
 </section>
