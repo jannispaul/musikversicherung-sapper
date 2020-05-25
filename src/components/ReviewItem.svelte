@@ -14,7 +14,7 @@
     itemscope
     itemtype="https://schema.org/Service"
     class=" hidden">
-    <span itemprop="name">Belmot Oldtimerversicherung</span>
+    <span itemprop="name">SINFONIMA/I'M SOUND Instrumentenversicherung</span>
   </div>
   <div class="md:flex items-center my-x0p5 md:mt-0 md:mb-x0p25 ">
     <span
