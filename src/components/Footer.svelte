@@ -1,3 +1,7 @@
+<script>
+  import { goto } from "@sapper/app";
+</script>
+
 <footer class="text-primary p-x1p5 text-x2 md:text-x0p75">
   <hr class="border-t md:border-t-x0p1 border-primary mb-x1 md:mb-x0p5" />
   <div
@@ -47,7 +51,11 @@
         Versicherungsbedingungen
       </a>
       &nbsp; · &nbsp;
-      <a href="/Beschwerdeverfahren.pdf" class="hover:underline">Beschwerden</a>
+      <a
+        href="https://musikversicherung.com/Beschwerdeverfahren.pdf"
+        class="hover:underline">
+        Beschwerden
+      </a>
     </div>
   </div>
   <hr class="border-t md:border-t-x0p1 border-primary " />
