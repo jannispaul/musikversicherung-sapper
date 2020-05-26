@@ -445,8 +445,8 @@
                   class="">
                   VDMK - Verband Deutscher Musikerzieher...
                 </option>
-                <option value="Verband Deutscher Schulmusiker">
-                  Verband Deutscher Schulmusiker
+                <option value="Bundesverband Musikunterricht">
+                  Bundesverband Musikunterricht
                 </option>
                 <option value="Verband Deutscher Tonmeister">
                   Verband Deutscher Tonmeister
