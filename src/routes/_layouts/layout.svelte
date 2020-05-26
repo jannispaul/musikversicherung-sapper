@@ -8,6 +8,8 @@
   import CookieNotice from "../../components/CookieNotice.svelte";
   import Nav from "../../components/Nav.svelte";
   import Footer from "../../components/Footer.svelte";
+  import GoogleAnalytics from "../../components/GoogleAnalytics.svelte";
+
   export let segment;
 </script>
 
@@ -26,8 +28,8 @@
   <meta name="robots" content="noindex" />
 </svelte:head> -->
 <CookieNotice />
+<GoogleAnalytics />
 <Nav {segment} />
-
 <main class="mb-x3 md:mb-x1 mt-x1 relative z-0" id="main">
   <slot />
 </main>

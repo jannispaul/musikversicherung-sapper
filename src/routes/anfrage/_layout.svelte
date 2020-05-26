@@ -1,17 +1,14 @@
+<script>
+  import GoogleAnalytics from "../../components/GoogleAnalytics.svelte";
+</script>
+
 <style>
   #main:focus {
     outline: 0;
   }
-  /* :global(body) {
-    background: #f8f5ff;
-  } */
-  /* @media (min-width: 500px) {
-    header {
-      display: flex;
-    }
-  } */
 </style>
 
+<GoogleAnalytics />
 <header
   class="w-full z-10 top-0 px-x1p5 py-x1p5 md:py-x0p5 md:px-x1p5 text-primary
   text-x2 md:text-x1 ">
