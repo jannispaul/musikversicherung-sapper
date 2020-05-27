@@ -39,7 +39,7 @@
     index = (index + 1) % heroImages.length;
   }
   function imageTimer() {
-    setInterval(function() {
+    setTimeout(function() {
       nextPicture();
       // create a recursive loop.
       imageTimer();
