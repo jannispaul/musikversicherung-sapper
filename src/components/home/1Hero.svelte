@@ -39,7 +39,7 @@
     index = (index + 1) % heroImages.length;
   }
   function imageTimer() {
-    setTimeout(function() {
+    setInterval(function() {
       nextPicture();
       // create a recursive loop.
       imageTimer();
@@ -78,7 +78,8 @@
 </style>
 
 <section
-  class="relative flex items-end md:items-center mb-x2 h-85vh md:h-screen">
+  class="relative flex items-end md:items-center mb-x2 h-95vh -mt-x6 md:-mt-x3
+  bg-black">
   <div
     class="w-full md:h-full px-x1p5 z-10 relative content md:w-7/12 md:flex
     md:flex-col md:justify-center ">
@@ -109,7 +110,6 @@
     </h1>
 
     <a
-      preload
       href="/anfrage"
       class="inline-block text-white hover:underline text-x2 md:text-x0p5
       bg-secondary p-x1 md:py-x0p25 md:px-x0p5 mb-x2 md:mb-0 md:inline-flex
@@ -119,8 +119,7 @@
 
   </div>
   <!-- </div> -->
-  <div
-    class="absolute images top-0 z-0 h-85vh md:h-screen w-full overflow-hidden">
+  <div class="absolute images top-0 z-0 h-95vh w-full overflow-hidden">
     {#each [heroImages[index]] as image (index)}
       <picture>
         <source sizes={image.sizes} srcset={image.srcsetWebp} alt={image.alt} />
@@ -134,31 +133,5 @@
           transition:fade />
       </picture>
     {/each}
-    <!-- 
-    {#if image == 0}
-      <Image
-        src="/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2160.jpg"
-        sizes="(max-width: 768px) 100vw, (min-width: 769px) 75vw"
-        srcset={`/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_200.jpg 200w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_745.jpg 745w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1136.jpg 1136w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1381.jpg 1381w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1590.jpg 1590w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1779.jpg 1779w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1933.jpg 1933w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2084.jpg 2084w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2128.jpg 2128w,/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2160.jpg 2160w`}
-        alt="Stagepiano mit Schlagzeug im Hintergrund" />
-    {/if}
-    {#if image == 1}
-      <Image
-        sizes="(min-width: 769px) 75vw"
-        srcset={`/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_200.jpg 200w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_601.jpg 601w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_879.jpg 879w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1117.jpg 1117w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1330.jpg 1330w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1520.jpg 1520w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1694.jpg 1694w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1875.jpg 1875w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2057.jpg 2057w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.jpg 2160w`}
-        src="/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.jpg"
-        alt="Live-Mischpult mit Menschenmenge im Hintergrund" />
-    {/if}
-    {#if image == 2}
-      <Image
-        sizes="(min-width: 769px) 75vw"
-        srcset={`/images/sax_lcabmf/sax_lcabmf_c_scale,w_200.jpg 200w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_636.jpg 636w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_923.jpg 923w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_1160.jpg 1160w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_1374.jpg 1374w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_1567.jpg 1567w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_1746.jpg 1746w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_1921.jpg 1921w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_2092.jpg 2092w, /images/sax_lcabmf/sax_lcabmf_c_scale,w_2160.jpg 2160w`}
-        src="/images/sax_lcabmf/sax_lcabmf_c_scale,w_2160.jpg"
-        alt="Saxophon mit anderen Musikern im Hintergrund" />
-    {/if} -->
   </div>
-  <!-- <div
-    class="shape bg-primary absolute w-8/12 right-0 bottom-0 mb-x2 z-0
-    md:relative md:mb-0" /> -->
-
 </section>

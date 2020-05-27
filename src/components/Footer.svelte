@@ -42,12 +42,17 @@
   <hr class="border-t md:border-t-x0p1 border-primary mb-x1 md:mb-x0p5" />
   <div class="md:flex mb-x1 md:mb-x0p5">
     <nav class="flex-1 ">
-      <a preload href="/impressum" class="hover:underline">Impressum</a>
+      <a rel="prefetch" href="/impressum" class="hover:underline">Impressum</a>
       &nbsp; · &nbsp;
-      <a preload href="/datenschutz" class="hover:underline">Datenschutz</a>
+      <a rel="prefetch" href="/datenschutz" class="hover:underline">
+        Datenschutz
+      </a>
     </nav>
     <div class="flex-1">
-      <a preload href="/versicherungsbedingungen" class="hover:underline">
+      <a
+        rel="prefetch"
+        href="/versicherungsbedingungen"
+        class="hover:underline">
         Versicherungsbedingungen
       </a>
       &nbsp; · &nbsp;

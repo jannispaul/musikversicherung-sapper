@@ -1,9 +1,13 @@
 <script>
   export let segment;
   let expanded = false;
+  import { stores } from "@sapper/app";
+  const { page } = stores();
+  // $: console.log($page);
 
   let scrollY;
-  $: navScrollThreshold = scrollY > 500;
+  $: navScrollThreshold = scrollY < 500 && $page.path === "/";
+  // $: console.log(navScrollThreshold);
 </script>
 
 <style>
@@ -98,7 +102,9 @@
 </style>
 
 <svelte:window bind:scrollY />
-<header class="w-full z-50 top-0 fixed {!navScrollThreshold ? 'negative' : ''}">
+<header
+  class="w-full z-50 top-0 sticky {navScrollThreshold ? 'negative' : ''}
+  ">
   <a
     href="#main"
     class="skip-to-main absolute z-0 w-1 h-1 overflow-hidden text-x2 md:text-x1">

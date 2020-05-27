@@ -10,10 +10,10 @@
   let files = [];
   let scrollPositionY;
 
-  $: {
-    // console.log(files);
-    console.log($schadenFormData.file);
-  }
+  // $: {
+  //   console.log($schadenFormData.file);
+  // }
+
   // Scroll to top of page
   let resetScrollPosition = () => (scrollPositionY = 0);
 
@@ -315,7 +315,9 @@
             <span>
               Ich akzeptiere die Übertragung und Speicherung meiner Daten zum
               Zwecke des angebotenen Services.
-              <a preload href="/datenschutz" class="underline">Mehr erfahren</a>
+              <a rel="prefetch" href="/datenschutz" class="underline">
+                Mehr erfahren
+              </a>
             </span>
           </label>
           {#if errors.tab2 || !termsAccepted}

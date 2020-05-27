@@ -23,5 +23,5 @@
 <picture>
   <source {sizes} srcset={srcsetWebp} {alt} />
   <source {sizes} {srcset} {alt} />
-  <img {sizes} {src} {alt} loading="lazy" transition:fade />
+  <img {sizes} {src} {alt} loading="lazy" />
 </picture>
