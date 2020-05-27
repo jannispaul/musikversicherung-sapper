@@ -21,7 +21,7 @@
 </style>
 
 <picture>
-  <source {sizes} srcset={srcsetWebp} {alt} />
+  <source {sizes} srcset={srcsetWebp} {alt} type="image/webp" />
   <source {sizes} {srcset} {alt} />
   <img {sizes} {src} {alt} loading="lazy" />
 </picture>
