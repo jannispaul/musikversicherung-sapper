@@ -315,7 +315,7 @@
             <span>
               Ich akzeptiere die Übertragung und Speicherung meiner Daten zum
               Zwecke des angebotenen Services.
-              <a href="/datenschutz" class="underline">Mehr erfahren</a>
+              <a preload href="/datenschutz" class="underline">Mehr erfahren</a>
             </span>
           </label>
           {#if errors.tab2 || !termsAccepted}

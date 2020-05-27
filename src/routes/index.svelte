@@ -53,6 +53,7 @@
 </svelte:head>
 <Layout>
   <Hero {reviewData} />
+
   <Types />
   <AsItShouldBe />
   <RecentReviews {reviewData} />

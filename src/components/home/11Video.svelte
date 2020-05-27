@@ -12,14 +12,15 @@
       background: none;
     }
     :global(.yt-component) {
-      width: 100vw;
+      width: calc(100vw - 5.55556vw * 2);
       height: 58vw;
+      margin-bottom: 5.55556vw;
     }
   }
 </style>
 
 <section class=" px-x1p5 pb-x3 md:py-x2 w-100 md:flex relative items-center">
-  <Youtube videoId="F2IZ9GeyaSs" class="-mr-x1p5 -ml-x1p5 mb-x2 md:m-0" />
+  <Youtube videoId="F2IZ9GeyaSs" />
   <!-- <iframe
     src="https://www.youtube-nocookie.com/embed/F2IZ9GeyaSs?rel=0"
     title="Heiner Blaskewitz von B!-Das Versicherungsbüro stellt sich vor"

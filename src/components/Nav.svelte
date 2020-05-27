@@ -1,6 +1,9 @@
 <script>
   export let segment;
   let expanded = false;
+
+  let scrollY;
+  $: navScrollThreshold = scrollY > 500;
 </script>
 
 <style>
@@ -71,9 +74,31 @@
     text-align: center;
     z-index: 999;
   }
+  .negative a {
+    color: #fff;
+    border: none;
+  }
+  .negative nav {
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 200ms ease;
+    backdrop-filter: blur(5px);
+  }
+  .negative .mobile-icon:after,
+  .negative .mobile-icon:before,
+  .negative .middle-line {
+    background-color: white;
+  }
+  .negative .mobile-menu {
+    background: transparent;
+  }
+  header,
+  nav {
+    transition: all 400ms ease;
+  }
 </style>
 
-<header class="w-full z-50 top-0 sticky">
+<svelte:window bind:scrollY />
+<header class="w-full z-50 top-0 fixed {!navScrollThreshold ? 'negative' : ''}">
   <a
     href="#main"
     class="skip-to-main absolute z-0 w-1 h-1 overflow-hidden text-x2 md:text-x1">
@@ -102,21 +127,10 @@
           ">
           <div class="middle-line" />
         </div>
-        <!-- <button
-          on:click={expanded === false ? () => (expanded = true) : () => (expanded = false)}
-          aria-label="Menu">
-          <svg
-            class="fill-primary w-x1p5 h-x1p5 md:hidden burger-svg"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button> -->
         <div
-          class="absolute md:relative bg-light top-0 w-screen block px-x1p5
-          pb-x2 mt-x3 -mx-x1p5 md:mt-0 md:py-x0p25 md:mb-0 md:flex
-          md:items-center md:w-auto {expanded === false ? 'hidden' : ''}">
+          class="mobile-menu relative md:relative bg-light md:bg-transparent
+          top-0 w-screen block px-x1p5 pb-x2 mt-x3 -mx-x1p5 md:mt-0 md:py-x0p25
+          md:mb-0 md:flex md:items-center md:w-auto {expanded === false ? 'hidden' : ''}">
           <div class="text-x3 md:text-x1 lg:text-x0p5 md:flex-grow">
             <a
               rel="prefetch"
