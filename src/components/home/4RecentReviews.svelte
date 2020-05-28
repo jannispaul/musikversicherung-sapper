@@ -33,11 +33,11 @@
       grid-column: 8/27;
       grid-row: 1/13;
     }
-    .image-guitar {
+    /* .image-guitar {
       grid-column: 5/10;
       grid-row: 8/12;
-    }
-    .image-drums {
+    } */
+    .image {
       grid-column: 2/12;
       grid-row: 4/9;
     }
@@ -71,7 +71,7 @@
     </a>
   </div>
   <div class="shape hidden md:block" />
-  <div class="z-20 image-drums relative hidden md:inline-block">
+  <div class="z-20 image relative hidden md:inline-block">
     <Image
       sizes="(min-width: 769px) 37vw, 10vw"
       srcset={`/images/violins_kzmb3h/violins_kzmb3h_c_scale,w_200.jpg 200w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_429.jpg 429w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_609.jpg 609w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_761.jpg 761w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_895.jpg 895w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1017.jpg 1017w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1142.jpg 1142w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1253.jpg 1253w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1263.jpg 1263w`}

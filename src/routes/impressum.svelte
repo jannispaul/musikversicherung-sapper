@@ -33,6 +33,7 @@
     Fax: 05191 - 9739026
     <br />
     <br />
+
     <div>
       <div>
         <div>
@@ -298,6 +299,27 @@
 
         </div>
       </div>
+    </div>
+    <br />
+    <br />
+    <div>
+      Bilder
+      <br />
+      <p>
+        Die auf dieser Website verwendeten Bilder stammen von
+        <a href="https://unsplash.com/" class="underline">unsplash.com</a>
+        und sind Eigentum der folgenden Fotografen:
+        <br />
+        Martin Hexeberg
+        <br />
+        Larisa Birta
+        <br />
+        Greyson Joralemon
+        <br />
+        Jens Thekkeveettil
+        <br />
+        <br />
+      </p>
     </div>
   </section>
 
