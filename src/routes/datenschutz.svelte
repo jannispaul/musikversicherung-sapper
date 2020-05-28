@@ -511,6 +511,28 @@
         </a>
       </p>
       <br />
+      <b>9. Integromat</b>
+      <p>
+        Zur Übermittlung und automatisierten Beantwortung Ihrer Anfragen nutzen
+        wir Integromat, einen Dienst von Integromat s.r.o., Novakovych 1954/20a
+        180 00 Prag 8, Tschechien. Dabei können Kundendaten übermittelt werden.
+        Weitere Informationen zum Datenschutz bei Integromat finden Sie unter:{' '}
+        <a href="https://support.integromat.com/hc/en-us/articles/360001988174">
+          https://support.integromat.com/hc/en-us/articles/360001988174
+        </a>
+        .
+      </p>
+      <br />
+      <b>10. Formbackend</b>
+      <p>
+        Zur Übermittlung und automatisierten Beantwortung Ihrer Schadensanfragen
+        nutzen wir Formbackend. Dabei können Kundendaten übermittelt werden.
+        Weitere Informationen zum Datenschutz bei Formbackend finden Sie unter:{' '}
+        <a href="https://www.formbackend.com/privacy">
+          https://www.formbackend.com/privacy
+        </a>
+        .
+      </p>
       <br />
       <h3>Anhang:</h3>
       <p>
