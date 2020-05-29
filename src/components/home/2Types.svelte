@@ -12,9 +12,7 @@
 </style>
 
 <section class="text-x2 md:text-x1 text-white py-x3 px-x1p5 md:p-x1p5">
-  <p class="mb-x2 md:mb-x1 md:text-center text-black">
-    Wähle die richtige Versicherung für Dich
-  </p>
+  <p class="mb-x2 md:mb-x1 md:text-center text-black">Das perfekte Duo</p>
   <div class="md:flex">
     <div
       class="px-x3 py-x2 md:px-x1 md:py-x1 bg-gradient-secondary mb-x1p5 md:mb-0
