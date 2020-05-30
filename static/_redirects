@@ -11,10 +11,17 @@ https://musikversicherung.netlify.app/* https://musikversicherung.com/:splat 301
 
 # Redirect reviews
 /kundenmeinungen/ /reviews  301 
+/faq-items/* /faq 301
+/wp-content/uploads/2015/05/Tipps-zu-Auslandsreisen.pdf  /Empfehlungen-zu-Auslandsreisen.pdf 301
+/das-kleingedruckte/ /versicherungsbedingungen 301
+/service/ /schaden-melden 301
+/i-m-sound/ / 301
+/instrumentenversicherung/ / 301
 
 
 # Old pages that got deleted
-https://musikversicherung.com/wp-content/uploads/2015/05/Tipps-zu-Auslandsreisen.pdf  / 410
-https://musikversicherung.com/i-m-sound/ / 410
-https://musikversicherung.com/instrumentenversicherung/ / 410
-
+https://musikversicherung.com/ueber-mich/ / 410
+https://musikversicherung.com/category/news/ / 410
+https://musikversicherung.com/kapitalbildung/ / 410
+https://musikversicherung.com/wp-content/uploads/2016/05/Versicherungsbedingungen-Sinfonima-2015.pdf / 410
+https://musikversicherung.com/das-besondere-angebot-fuer-alle-teilnehmer-des-wettbewerbs-jugend-musiziert/ / 410
