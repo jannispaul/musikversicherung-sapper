@@ -38,7 +38,7 @@ module.exports = {
         x1p5: "3vw;",
         x2: "4vw;",
         x3: "6vw",
-        x4: "8vw",
+        x4: "5.5vw",
         x5: "5vw",
         x6:
           "calc(24.32px + (194.56 - 24.32) * ((100vw - 320px) / (2560 - 320)))",
@@ -50,6 +50,8 @@ module.exports = {
           "calc(82.08px + (656.64 - 82.08) * ((100vw - 320px) / (2560 - 320)))",
       },
       spacing: {
+        x0p1: "0.1vw",
+        x0p2: "0.2vw",
         x0p25: "calc(100vw * 0.25/ 27)",
         x0p5: "calc(100vw * 0.5/ 27)",
         x1: "calc(100vw * 1/ 27)",
@@ -81,7 +83,7 @@ module.exports = {
         x26: "calc(100vw * 26 / 27)",
         x27: "calc(100vw * 27 / 27)",
         "stars-md": "calc(100vw * 0.4/ 27)",
-        "95vh": "95vh",
+        "85vh": "85vh",
       },
       margin: {
         "-2": "-2px",

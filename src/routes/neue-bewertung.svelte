@@ -7,7 +7,7 @@
   <div
     class="text-x2 md:text-x1 lg:text-x0p5 px-x1p5 md:grid grid-cols-2 md:-mt-x1">
     <h1
-      class="text-x4 md:text-x2 text-primary mb-x1 font-medium md:h-100
+      class="text-x3 md:text-x2 text-primary mb-x1 font-medium md:h-100
       md:text-light md:flex md:items-center md:text-center md:bg-primary">
       Ich freue mich über Deine Bewertung!
     </h1>

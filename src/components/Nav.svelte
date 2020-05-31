@@ -78,7 +78,7 @@
     text-align: center;
     z-index: 999;
   }
-  .negative a {
+  /* .negative a {
     color: #fff;
     border: none;
   }
@@ -94,7 +94,7 @@
   }
   .negative .mobile-menu {
     background: transparent;
-  }
+  } */
   header,
   nav {
     transition: all 400ms ease;
@@ -111,8 +111,8 @@
     Navigation überspringen
   </a>
   <nav
-    class="flex items-center justify-between flex-wrap bg-light py-x1
-    md:py-x0p25 px-x1p5">
+    class="flex items-center justify-between flex-wrap bg-light py-x1 md:py-0
+    px-x1p5">
     <div class="relative flex justify-between flex-wrap w-full">
       <div
         class="flex justify-between flex-wrap w-full items-center flex-shrink-0
@@ -121,7 +121,7 @@
           rel="prefetch"
           class:active={segment === 'index'}
           href="."
-          class="text-x3 text-primary md:text-x1 lg:text-x0p5 mt-1 ">
+          class="text-x2 text-primary md:text-x0p75 lg:text-x0p25 mt-1 ">
           <strong>
             Musikversicherung
             <span class="opacity-75 -ml-1">.com</span>
@@ -135,9 +135,9 @@
         </div>
         <div
           class="mobile-menu relative md:relative bg-light md:bg-transparent
-          top-0 w-screen block px-x1p5 pb-x2 mt-x3 -mx-x1p5 md:mt-0 md:py-x0p25
+          top-0 w-screen block px-x1p5 pb-x2 mt-x3 -mx-x1p5 md:mt-0 md:py-x0p5
           md:mb-0 md:flex md:items-center md:w-auto {expanded === false ? 'hidden' : ''}">
-          <div class="text-x3 md:text-x1 lg:text-x0p5 md:flex-grow">
+          <div class="text-x3 md:text-x0p75 lg:text-x0p25 md:flex-grow">
             <a
               rel="prefetch"
               class:active={segment === 'faq'}
@@ -149,28 +149,28 @@
             <a
               rel="prefetch"
               class:active={segment === 'schaden-melden'}
-              href="schaden-melden"
+              href="/schaden-melden"
               class="block mt-4 md:inline-block md:mt-0 text-primary
               hover:underline mr-x0p5 ">
               Schaden melden
             </a>
             <a
               rel="prefetch"
-              class:active={segment === 'kontakt'}
+              aria-current={segment === 'kontakt' ? 'seite' : undefined}
+              class:underline={segment === 'kontakt'}
               href="kontakt"
               class="block mt-4 md:inline-block md:mt-0 text-primary
               hover:underline mr-x0p5">
               Kontakt
             </a>
+            <a
+              rel="prefetch"
+              href="anfrage"
+              class="block mt-4 md:inline-block md:mt-0 text-primary
+              hover:underline">
+              Jetzt anfragen
+            </a>
           </div>
-          <a
-            href="anfrage"
-            class="inline-block text-x3 text-primary mt-4 md:px-x0p5 md:py-x0p25
-            md:leading-none md:border md:border-primary
-            md:hover:border-transparent md:hover:text-light md:hover:bg-primary
-            md:mt-0 md:text-x0p5 md:border-x0p1 ">
-            Jetzt anfragen
-          </a>
         </div>
       </div>
     </div>

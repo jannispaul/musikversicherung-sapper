@@ -17,7 +17,7 @@
   <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
     <div
       itemprop="text"
-      class="mb-x1 md:mb-x1"
+      class="mb-x1 md:mb-x1 opacity-75"
       contenteditable="false"
       bind:innerHTML={answer} />
   </div>

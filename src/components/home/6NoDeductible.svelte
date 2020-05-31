@@ -5,14 +5,18 @@
 <style>
   :global(.bg-gradient) {
     background: linear-gradient(228.42deg, #412b75 4.06%, #6b46c1 94.06%);
+    background: #6b46c1;
   }
   :global(.bg-gradient-secondary) {
     background: linear-gradient(240.83deg, #db0086 4.06%, #960075 94.06%);
+    background: #cf208c;
   }
 
   @media (min-width: 768px) {
     .content {
       background: linear-gradient(240.83deg, #db0086 4.06%, #960075 94.06%);
+      background: #cf208c;
+
       min-width: 40vw;
       max-width: 45vw;
     }

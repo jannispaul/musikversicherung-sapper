@@ -15,10 +15,10 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
 module.exports = {
   plugins: [
     tailwindcss("./tailwind.js"),
+    require("postcss-import")(),
 
     // only needed if you want to purge
     ...(process.env.NODE_ENV === "production" ? [purgecss] : []),
-    require("postcss-import")(),
     require("autoprefixer")(),
     require("cssnano")({
       preset: "advanced",
