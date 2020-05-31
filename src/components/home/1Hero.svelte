@@ -117,7 +117,7 @@
 </style>
 
 <section
-  class="relative flex items-end md:items-center mb-x2 h-85vh -mt-x3 md:-mt-x1
+  class="relative flex items-end md:items-center h-85vh -mt-x3 md:-mt-x1
   text-center ">
   <div
     class="w-full md:h-full z-10 relative content md:w-10/12 md:flex md:flex-col
@@ -140,7 +140,7 @@
     </div>
     <!-- <div class="content z-20 md:flex md:flex-wrap md:items-start "> -->
     <h1
-      class="text-white text-x7 md:text-x4 mb-x1 leading-tighter font-medium
+      class="text-white text-x7 md:text-x3 mb-x1 leading-tighter font-medium
       block md:mb-x1 ">
       Deine Versicherung für
       <span class="">Instrumente</span>

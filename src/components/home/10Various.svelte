@@ -8,14 +8,16 @@
 </style>
 
 <section
-  class="md:flex px-x1p5 py-x3 md:py-x2 md:text-light text-x2 md:text-x0p5">
-  <div class="flex-1 bg-gradient md:p-x1 md:w-1/2 md:mr-x1 mb-x3 md:mb-0">
+  class="md:flex px-x1p5 py-x3 md:py-x2 md:text-light text-x2 md:text-x0p25">
+  <div class="flex-1 bg-gradient md:p-x1p5 md:w-1/2 md:mr-x1 mb-x3 md:mb-0">
     <h3
       class="text-x6 text-primary md:text-light md:text-x1 mb-x1 leading-tight
       md:mb-x0p5 font-medium ">
       Schützt weltweit,
       <br />
-      auch im Proberaum und Auto
+      auch im Proberaum
+      <br class="md:hidden" />
+      und Auto
     </h3>
     <p>
       Egal, ob Du zuhause oder unterwegs bist: SINFONIMA und I’M SOUND gelten
@@ -26,7 +28,7 @@
     </p>
   </div>
 
-  <div class="flex-1 bg-gradient-secondary md:p-x1 md:w-1/2">
+  <div class="flex-1 bg-gradient-secondary md:p-x1p5 md:w-1/2">
     <h3
       class="text-x6 text-secondary md:text-light md:text-x1 mb-x1 leading-tight
       md:mb-x0p5 font-medium ">

@@ -30,7 +30,7 @@
 <!-- <CookieNotice /> -->
 <GoogleAnalytics />
 <Nav {segment} />
-<main class="mb-x3 md:mb-x1 mt-x1 relative z-0" id="main">
+<main class=" mt-x1 relative z-0" id="main">
   <slot />
 </main>
 <Footer />

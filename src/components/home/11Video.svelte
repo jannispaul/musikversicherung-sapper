@@ -30,8 +30,8 @@
     class="-mr-x1p5 -ml-x1p5 mb-x2 md:m-0" /> -->
 
   <div
-    class="bg-gradient-secondary md:p-x1 md:relative md:z-10 md:flex flex-col
-    mw-x5 md:-ml-x1 md:w-1/2">
+    class="bg-gradient-secondary md:p-x1 md:relative md:z-0 md:flex flex-col
+    mw-x5 md:w-1/2">
     <h3
       class="text-x6 text-primary md:text-light md:text-x1 mb-x1 leading-tight
       md:mb-x0p5 font-medium whitespace-no-wrap">
@@ -39,7 +39,7 @@
       <br />
       musikversicherung.com?
     </h3>
-    <p class="text-x2 mb-x1 md:text-x0p5 md:mb-0 md:text-light ">
+    <p class="text-x2 mb-x1 md:text-x0p25 md:mb-0 md:text-light ">
       Wenn Du wissen willst, mit wem Du es zu tun hast, schau Dir dieses kleine
       Video an. Hier erfährst Du, wer ich bin und was mich antreibt. Viel Spaß!
     </p>

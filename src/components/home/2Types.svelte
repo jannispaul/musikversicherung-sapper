@@ -17,7 +17,7 @@
     <div
       class="px-x3 py-x2 md:px-x1 md:py-x1 bg-gradient-secondary mb-x1p5 md:mb-0
       md:mr-x1 w-full">
-      <h2 class="text-white uppercase text-x7 md:text-x5 leading-tighter">
+      <h2 class="text-white uppercase text-x7 md:text-x3 leading-tighter">
         Sinfonima
         <span class="sup">®</span>
       </h2>
@@ -28,7 +28,7 @@
       </p>
     </div>
     <div class="px-x3 py-x2 md:px-x1 md:py-x1 bg-gradient w-full">
-      <h2 class="text-white uppercase text-x7 md:text-x5 leading-tighter ">
+      <h2 class="text-white uppercase text-x7 md:text-x3 leading-tighter ">
         I’m sound
         <span class="sup">®</span>
       </h2>
