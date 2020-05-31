@@ -51,6 +51,8 @@
       <a rel="prefetch" href="/datenschutz" class="hover:underline ">
         Datenschutz
       </a>
+      &nbsp; · &nbsp;
+      <a href="/sitemap.xml" class="hover:underline ">Sitemap</a>
     </nav>
     <div class="flex-1">
       <a
@@ -65,6 +67,7 @@
         class="hover:underline mb-x0p5 md:mb-0">
         Beschwerden
       </a>
+
     </div>
   </div>
   <hr class="border-t md:border-t-x0p1 border-primary " />
