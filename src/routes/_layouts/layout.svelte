@@ -27,7 +27,7 @@
 <!-- <svelte:head>
   <meta name="robots" content="noindex" />
 </svelte:head> -->
-<!-- <CookieNotice /> -->
+<CookieNotice />
 <GoogleAnalytics />
 <Nav {segment} />
 <main class=" mt-x1 relative z-0" id="main">

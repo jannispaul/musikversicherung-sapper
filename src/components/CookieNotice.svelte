@@ -1,11 +1,13 @@
 <script>
-  let cookiesAccepted = false;
+  let cookiesAccepted = true;
 
   // When in client browser, run getCookie to look for "cookiesAccepted"
   if (process.browser === true) {
     function checkCookie() {
       const name = "cookiesAccepted";
-      cookiesAccepted = getCookie(name);
+      let localCookie = getCookie(name);
+      localCookie ? (cookiesAccepted = localCookie) : (cookiesAccepted = false);
+      // cookiesAccepted = getCookie(name);
     }
     checkCookie();
   }
@@ -46,8 +48,8 @@
 
 {#if cookiesAccepted == false}
   <div
-    class="w-full bg-primary-light p-x1p5 md:p-x0p5 md:flex fixed bottom-0 z-10
-    text-x2 md:text-x1 lg:text-x0p5">
+    class="w-full bg-primary-light p-x1p5 md:px-x1p5 md:py-x0p5 md:flex fixed
+    bottom-0 z-10 text-x2 md:text-x0p5 lg:text-x0p25">
     <p class="md:mr-x1 mb-x1 md:mb-0">
       Cookies helfen uns bei der Bereitstellung unserer Inhalte und Dienste.
       Durch die weitere Nutzung der Webseite stimmst Du der Verwendung von
