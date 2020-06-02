@@ -17,6 +17,7 @@ module.exports = {
         warning: "red",
         light: "#F8F5FF",
         primary: "#6B46C1",
+        "primary-dark": "#5636a1",
         "primary-extra-light": "#6c47c2",
         "primary-light": "#EEE7FF",
         "secondary-dark": "#ca1182",
@@ -41,19 +42,14 @@ module.exports = {
         x4: "6vw",
         x5: "7vw",
         x6: "8vw",
-        // "calc(24.32px + (194.56 - 24.32) * ((100vw - 320px) / (2560 - 320)))",
         x7: "9.5vw",
-
-        x8:
-          "calc(54.72px + (437.76 - 54.72) * ((100vw - 320px) / (2560 - 320)))",
-        x9:
-          "calc(82.08px + (656.64 - 82.08) * ((100vw - 320px) / (2560 - 320)))",
       },
       spacing: {
         x0p1: "0.1vw",
         x0p2: "0.2vw",
         x0p25: "calc(100vw * 0.25/ 27)",
         x0p5: "calc(100vw * 0.5/ 27)",
+        x0p75: "calc(100vw * 0.75/ 27)",
         x1: "calc(100vw * 1/ 27)",
         x1p5: "calc(100vw * 1.5/ 27)",
         x2: "calc(100vw * 2 / 27)",

@@ -6,7 +6,7 @@
   let heroImages = [
     {
       src: "/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2160.jpg",
-      sizes: "(max-width: 768px) 100vw, 200vw",
+      sizes: "(max-width: 768px) 80vw, 150vw",
       srcset:
         "/images/piano_y1wv8n/piano_y1wv8n_c_scale,w_200.jpg 200w, /images/piano_y1wv8n/piano_y1wv8n_c_scale,w_745.jpg 745w, /images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1136.jpg 1136w, /images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1381.jpg 1381w, /images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1590.jpg 1590w, /images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1779.jpg 1779w, /images/piano_y1wv8n/piano_y1wv8n_c_scale,w_1933.jpg 1933w, /images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2084.jpg 2084w, /images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2128.jpg 2128w, /images/piano_y1wv8n/piano_y1wv8n_c_scale,w_2160.jpg 2160w",
       srcsetWebp:
@@ -15,7 +15,7 @@
     },
     {
       src: "/images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1263.jpg",
-      sizes: "(min-width: 769px) 100vw, 200vw",
+      sizes: "(min-width: 769px) 80vw, 150vw",
       srcset:
         "/images/violins_kzmb3h/violins_kzmb3h_c_scale,w_200.jpg 200w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_429.jpg 429w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_609.jpg 609w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_761.jpg 761w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_895.jpg 895w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1017.jpg 1017w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1142.jpg 1142w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1253.jpg 1253w, /images/violins_kzmb3h/violins_kzmb3h_c_scale,w_1263.jpg 1263w",
       srcsetWebp:
@@ -24,7 +24,7 @@
     },
     {
       src: "/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.jpg",
-      sizes: "(min-width: 769px) 90vw,200vw",
+      sizes: "(min-width: 769px) 80vw, 150vw",
       srcset: `/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_200.jpg 200w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_601.jpg 601w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_879.jpg 879w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1117.jpg 1117w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1330.jpg 1330w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1520.jpg 1520w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1694.jpg 1694w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1875.jpg 1875w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2057.jpg 2057w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.jpg 2160w`,
       srcsetWebp: `/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_200.webp 200w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_601.webp 601w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_879.webp 879w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1117.webp 1117w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1330.webp 1330w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1520.webp 1520w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1694.webp 1694w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1875.webp 1875w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2057.webp 2057w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.webp 2160w`,
       alt: "Live-Mischpult mit Menschenmenge im Hintergrund"

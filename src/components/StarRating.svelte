@@ -73,7 +73,7 @@
         viewBox="0 0 {style.styleStarWidth}
         {style.styleStarWidth}"
         xmlns="http://www.w3.org/2000/svg"
-        class="star-svg w-x1 md:w-stars-md lg:w-x0p75"
+        class="star-svg w-x1 md:w-stars-md lg:w-x0p5"
         style="fill: url(#gradient{star.raw});">
         <path
           d="M.476 6.952l7.159-.178L9.955 0l2.382 6.754 7.16.114-5.687 4.351
