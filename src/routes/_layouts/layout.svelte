@@ -5,6 +5,7 @@
   // import { setContext } from "svelte";
   // setContext("reviewData", reviewData);
 
+  import Notice from "../../components/Notice.svelte";
   import CookieNotice from "../../components/CookieNotice.svelte";
   import Nav from "../../components/Nav.svelte";
   import Footer from "../../components/Footer.svelte";
@@ -27,6 +28,7 @@
 <!-- <svelte:head>
   <meta name="robots" content="noindex" />
 </svelte:head> -->
+<Notice />
 <CookieNotice />
 <GoogleAnalytics />
 <Nav {segment} />
