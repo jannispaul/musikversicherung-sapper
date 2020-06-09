@@ -3,7 +3,7 @@
 </script>
 
 <style>
-  :global(.yt-component) {
+  .video-container {
     width: 60vw;
     height: 34vw;
   }
@@ -11,10 +11,9 @@
     .bg-gradient-secondary {
       background: none;
     }
-    :global(.yt-component) {
-      width: calc(100vw - 5.55556vw * 2);
-      height: 58vw;
-      margin-bottom: 5.55556vw;
+    .video-container {
+      width: 100%;
+      height: 100%;
     }
   }
 </style>
@@ -22,15 +21,12 @@
 <section
   id="ueber-mich"
   class=" px-x1p5 pb-x3 md:py-x2 w-100 md:flex relative items-center">
-  <Youtube videoId="F2IZ9GeyaSs" />
-  <!-- <iframe
-    src="https://www.youtube-nocookie.com/embed/F2IZ9GeyaSs?rel=0"
-    title="Heiner Blaskewitz von B!-Das Versicherungsbüro stellt sich vor"
-    frameborder="0"
-    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-    class="-mr-x1p5 -ml-x1p5 mb-x2 md:m-0" /> -->
-
+  <div class="video-container">
+    <Youtube
+      videoId="F2IZ9GeyaSs"
+      title="Heiner Blaskewitz von B!-Das Versicherungsbüro stellt sich vor"
+      class="-mr-x1p5 -ml-x1p5 mb-x2 md:m-0 " />
+  </div>
   <div
     class="bg-gradient-secondary md:p-x1 md:relative md:z-0 md:flex flex-col
     mw-x5 md:w-1/2">
