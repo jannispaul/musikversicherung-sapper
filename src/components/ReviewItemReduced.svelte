@@ -24,24 +24,21 @@
     </span>
   </div>
   <div class="flex items-center mb-x0p25 md:mb-0 md:text-x0p25">
-    <span
-      itemprop="reviewRating"
-      itemscope
-      itemtype="https://schema.org/Rating">
+    <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
       <span itemprop="ratingValue" class="hidden">{review.rating}</span>
       <span itemprop="bestRating" class="hidden">5</span>
       <StarRatingSimple rating={review.rating} />
-    </span>
-    <span class="flex opacity-75">
+    </div>
+    <div class="flex opacity-75">
       &nbsp;von&nbsp;
-      <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <div itemprop="author" itemscope itemtype="https://schema.org/Person">
         <p itemprop="name">{review.name}</p>
-      </span>
+      </div>
       &nbsp;am&nbsp;
       <p itemprop="datePublished" content={review.microDataDate}>
         {review.date}
       </p>
-    </span>
+    </div>
   </div>
   <p itemprop="reviewBody" class="">
     {@html review.review}

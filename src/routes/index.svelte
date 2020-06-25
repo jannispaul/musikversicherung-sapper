@@ -49,7 +49,6 @@
     content="SINFONIMA-Instrumentenversicherung & I'M
     SOUND-Equipmentversicherung - bester Allgefahrenschutz für klassische
     Instrumente und elektronisches Equipment" />
-  <!-- <html lang="de" /> -->
 </svelte:head>
 <Layout>
   <Hero {reviewData} />

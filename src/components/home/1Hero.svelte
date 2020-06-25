@@ -25,8 +25,10 @@
     {
       src: "/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.jpg",
       sizes: "(min-width: 769px) 80vw, 150vw",
-      srcset: `/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_200.jpg 200w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_601.jpg 601w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_879.jpg 879w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1117.jpg 1117w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1330.jpg 1330w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1520.jpg 1520w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1694.jpg 1694w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1875.jpg 1875w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2057.jpg 2057w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.jpg 2160w`,
-      srcsetWebp: `/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_200.webp 200w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_601.webp 601w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_879.webp 879w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1117.webp 1117w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1330.webp 1330w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1520.webp 1520w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1694.webp 1694w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1875.webp 1875w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2057.webp 2057w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.webp 2160w`,
+      srcset:
+        "/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_200.jpg 200w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_601.jpg 601w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_879.jpg 879w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1117.jpg 1117w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1330.jpg 1330w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1520.jpg 1520w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1694.jpg 1694w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1875.jpg 1875w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2057.jpg 2057w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.jpg 2160w",
+      srcsetWebp:
+        "/images/mixer_a6lonu/mixer_a6lonu_c_scale,w_200.webp 200w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_601.webp 601w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_879.webp 879w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1117.webp 1117w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1330.webp 1330w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1520.webp 1520w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1694.webp 1694w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_1875.webp 1875w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2057.webp 2057w, /images/mixer_a6lonu/mixer_a6lonu_c_scale,w_2160.webp 2160w",
       alt: "Live-Mischpult mit Menschenmenge im Hintergrund"
     },
     {
@@ -166,12 +168,11 @@
           <source
             sizes={heroImages[firstIndex].sizes}
             srcset={heroImages[firstIndex].srcsetWebp}
-            alt={heroImages[firstIndex].alt}
             type="image/webp" />
           <source
             sizes={heroImages[firstIndex].sizes}
-            srcset={heroImages[firstIndex].scrset}
-            alt={heroImages[firstIndex].alt} />
+            srcset={heroImages[firstIndex].srcset}
+            type="image/jpeg" />
           <img
             sizes={heroImages[firstIndex].sizes}
             src={heroImages[firstIndex].src}
@@ -184,12 +185,11 @@
           <source
             sizes={heroImages[secondIndex].sizes}
             srcset={heroImages[secondIndex].srcsetWebp}
-            alt={heroImages[secondIndex].alt}
             type="image/webp" />
           <source
             sizes={heroImages[secondIndex].sizes}
-            srcset={heroImages[secondIndex].scrset}
-            alt={heroImages[secondIndex].alt} />
+            srcset={heroImages[secondIndex].srcset}
+            type="image/jpeg" />
           <img
             sizes={heroImages[secondIndex].sizes}
             src={heroImages[secondIndex].src}
