@@ -38,7 +38,7 @@
 <div class="star-container">
   <div class="star-rating">
     <!-- Set stars according to rating -->
-    {#each Array(rating) as star}
+    {#each Array(parseInt(rating)) as star}
       <svg
         viewBox="0 0 {style.styleStarWidth}
         {style.styleStarWidth}"
@@ -50,7 +50,7 @@
       </svg>
     {/each}
     <!-- Set gray stars to get 5 stars in total -->
-    {#each Array(totalStars - rating) as star}
+    {#each Array(totalStars - parseInt(rating)) as star}
       <svg
         viewBox="0 0 {style.styleStarWidth}
         {style.styleStarWidth}"
