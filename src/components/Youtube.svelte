@@ -88,7 +88,6 @@
   <iframe
     {title}
     src="https://www.youtube-nocookie.com/embed/{videoId}?rel=0"
-    frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope;
     picture-in-picture"
     allowfullscreen />
