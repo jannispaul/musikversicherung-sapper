@@ -174,7 +174,6 @@
             srcset={heroImages[firstIndex].srcset}
             type="image/jpeg" />
           <img
-            sizes={heroImages[firstIndex].sizes}
             src={heroImages[firstIndex].src}
             alt={heroImages[firstIndex].alt}
             loading="eager"
@@ -191,7 +190,6 @@
             srcset={heroImages[secondIndex].srcset}
             type="image/jpeg" />
           <img
-            sizes={heroImages[secondIndex].sizes}
             src={heroImages[secondIndex].src}
             alt={heroImages[secondIndex].alt}
             loading="eager"
