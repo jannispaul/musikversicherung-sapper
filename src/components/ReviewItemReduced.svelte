@@ -10,7 +10,6 @@
 </script>
 
 <div
-  itemprop="review"
   itemscope
   itemtype="https://schema.org/Review"
   class=" text-x2 md:text-x0p5 md:flex-half">
