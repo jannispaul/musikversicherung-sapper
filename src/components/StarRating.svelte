@@ -68,18 +68,18 @@
 
 <div class="star-container">
   <div class="star-rating">
-    {#each stars as star}
+    {#each stars as star, index}
       <svg
         viewBox="0 0 {style.styleStarWidth}
         {style.styleStarWidth}"
         xmlns="http://www.w3.org/2000/svg"
         class="star-svg w-x1 md:w-stars-md lg:w-x0p5"
-        style="fill: url(#gradient{star.raw});">
+        style="fill: url(#gradient{index});">
         <path
           d="M.476 6.952l7.159-.178L9.955 0l2.382 6.754 7.16.114-5.687 4.351
           2.104 6.845L10.018 14l-5.86 4.116 2.043-6.863z" />
         <defs>
-          <linearGradient id="gradient{star.raw}">
+          <linearGradient id="gradient{index}">
             <stop
               offset={star.percent}
               stop-opacity="1"
