@@ -107,7 +107,8 @@
   ">
   <a
     href="#main"
-    class="skip-to-main absolute z-0 w-1 h-1 overflow-hidden text-x2 md:text-x1">
+    class="skip-to-main absolute z-0 w-1 h-1 overflow-hidden text-x2 md:text-x1"
+    title="Navigation überspringen">
     Navigation überspringen
   </a>
   <nav
@@ -121,6 +122,7 @@
           rel="prefetch"
           class:active={segment === 'index'}
           href="."
+          title="Startseite aufrufen"
           class="text-x2 text-primary md:text-x0p75 lg:text-x0p25 mt-1 ">
           <strong>
             Musikversicherung
@@ -142,6 +144,7 @@
               rel="prefetch"
               class:active={segment === 'faq'}
               href="faq"
+              title="FAQs aufrufen"
               class="block mt-4 md:inline-block md:mt-0 text-primary
               hover:text-primary mr-x0p5 hover:underline">
               FAQ
@@ -150,6 +153,7 @@
               rel="prefetch"
               class:active={segment === 'schaden-melden'}
               href="/schaden-melden"
+              title="Schaden melden"
               class="block mt-4 md:inline-block md:mt-0 text-primary
               hover:underline mr-x0p5 ">
               Schaden melden
@@ -159,6 +163,7 @@
               aria-current={segment === 'kontakt' ? 'seite' : undefined}
               class:underline={segment === 'kontakt'}
               href="kontakt"
+              title="Kontakt"
               class="block mt-4 md:inline-block md:mt-0 text-primary
               hover:underline mr-x0p5">
               Kontakt
@@ -166,6 +171,7 @@
             <a
               rel="prefetch"
               href="anfrage"
+              title="Angebot anfragen"
               class="block mt-4 md:inline-block md:mt-0 text-primary
               hover:underline">
               Jetzt anfragen

@@ -64,7 +64,8 @@
       href="#reviews"
       class="w-auto inline-flex text-secondary bg-secondary-light py-x0p5 px-x1
       mt-x1 md:mt-0 md:py-x0p25 md:px-x0p5 md:order-1 md:items-center
-      md:hover:bg-secondary-light-hover">
+      md:hover:bg-secondary-light-hover"
+      title="Zu den Reviews springen">
       <StarRating
         rating={reviewData.averageRating}
         styleStarWidth="50"
@@ -91,7 +92,8 @@
       class=" text-white underline text-x2 bg-secondary absolute left-0 p-x1
       z-30 bottom-0 md:relative md:text-secondary md:bg-secondary-light
       md:inline-flex md:mt-0 md:py-x0p25 md:px-x0p5 md:text-x0p5 md:order-2
-      md:items-center md:hover:bg-secondary-light-hover ">
+      md:items-center md:hover:bg-secondary-light-hover"
+      title="Angebot anfragen">
       Jetzt anfragen
     </a>
   </div>

@@ -2,10 +2,9 @@
   import Layout from "./_layouts/layout.svelte";
 </script>
 
-<!-- <svelte:head>
-  <meta name="robots" content="noindex" />
-</svelte:head> -->
-
+<svelte:head>
+  <title>Versicherungsbedingungen</title>
+</svelte:head>
 <Layout>
   <section class="px-x1p5 mb-x1 text-x0p75">
     <h1 class=" text-primary text-x5 mb-x2">Versicherungsbedingungen</h1>
@@ -14,7 +13,10 @@
         Die vollständigen Versicherungsbedingungen finden sich hier:
         <a
           href="https://service.mannheimer.de/webcode/start.do"
-          class="underline">
+          title="Mannheimer-Seite für Versicherungsbedingungen aufrufen"
+          class="underline"
+          target="_blank"
+          rel="noopener noreferrer">
           https://service.mannheimer.de/webcode/start.do
         </a>
         <br />

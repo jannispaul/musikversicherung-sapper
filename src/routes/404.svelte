@@ -18,7 +18,8 @@
       <br />
       <a
         href="mailto:info@musikversicherung.com?subject=Report%20404:%20Seite%20nicht%20gefunden&amp;body=Hallo%20Herr%20Blaskewitz%2C%20der%20folgender%20Link%20funktioniert%20leider%20nicht%20mehr%3A%20%3Chier%20LINK%20einsetzten%3E"
-        class="underline">
+        class="underline"
+        title="Einen Fehler melden">
         info@musikversicherung.com
       </a>
     </p>

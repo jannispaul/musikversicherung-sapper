@@ -66,7 +66,8 @@
     <a
       rel="prefetch"
       href="/reviews"
-      class="text-x2 md:text-x0p5 underline mb-x3 md:mb-x1">
+      class="text-x2 md:text-x0p5 underline mb-x3 md:mb-x1"
+      title="Reviews aufrufen">
       Alle Bewertungen ansehen
     </a>
   </div>

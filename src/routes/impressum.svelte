@@ -76,20 +76,26 @@
             Fax: 0 30.2 03 08-10 00, E-Mail:
             <a
               href="mailto:vr@dihk.de?subject=Vermittlerregister.info"
-              title="E-Mail an vr@dihk.de schreiben">
+              title="E-Mail an vr@dihk.de schreiben"
+              target="_blank"
+              rel="noopener noreferrer">
               vr@dihk.de
             </a>
             <br />
             Internet:
             <a
               href="https://www.vermittlerregister.info"
-              title="Vermittlerregister aufrufen">
+              title="Vermittlerregister aufrufen"
+              target="_blank"
+              rel="noopener noreferrer">
               https://www.vermittlerregister.info
             </a>
             oder
             <a
               href="https://www.vermittlerregister.org"
-              title="Vermittlerregister aufrufen">
+              title="Vermittlerregister aufrufen"
+              target="_blank"
+              rel="noopener noreferrer">
               https://www.vermittlerregister.org
             </a>
           </p>
@@ -117,7 +123,11 @@
               service@mannheimer.de
             </a>
             , Internet:
-            <a href="https://www.mannheimer.de" title="Mannheimer.de aufrufen">
+            <a
+              href="https://www.mannheimer.de"
+              title="Mannheimer.de aufrufen"
+              target="_blank"
+              rel="noopener noreferrer">
               https://www.mannheimer.de
             </a>
           </p>
@@ -147,7 +157,9 @@
               , Internet:
               <a
                 href="https://www.continentale.de"
-                title="continentale.de aufrufen">
+                title="continentale.de aufrufen"
+                target="_blank"
+                rel="noopener noreferrer">
                 https://www.continentale.de
               </a>
             </li>
@@ -173,7 +185,9 @@
               , Internet:
               <a
                 href="https://www.continentale.de"
-                title="continentale.de aufrufen">
+                title="continentale.de aufrufen"
+                target="_blank"
+                rel="noopener noreferrer">
                 https://www.continentale.de
               </a>
             </li>
@@ -198,7 +212,9 @@
               , Internet:
               <a
                 href="https://www.continentale.de"
-                title="continentale.de aufrufen">
+                title="continentale.de aufrufen"
+                target="_blank"
+                rel="noopener noreferrer">
                 https://www.continentale.de
               </a>
             </li>
@@ -221,7 +237,11 @@
                 info@europa.de
               </a>
               , Internet:
-              <a href="https://www.europa.de/" title="europa.de aufrufen">
+              <a
+                href="https://www.europa.de/"
+                title="europa.de aufrufen"
+                target="_blank"
+                rel="noopener noreferrer">
                 https://www.europa.de/
               </a>
             </li>
@@ -246,7 +266,9 @@
               , Internet:
               <a
                 href="https://www.nrv-rechtsschutz.de"
-                title="nrv-rechtsschutz.de aufrufen">
+                title="nrv-rechtsschutz.de aufrufen"
+                target="_blank"
+                rel="noopener noreferrer">
                 https://www.nrv-rechtsschutz.de
               </a>
             </li>
@@ -304,7 +326,9 @@
             <br />
             <a
               href="https://www.versicherungsombudmann.de"
-              title="versicherungsombudmann.de aufrufen">
+              title="versicherungsombudmann.de aufrufen"
+              target="_blank"
+              rel="noopener noreferrer">
               www.versicherungsombudsmann.de
             </a>
           </p>
@@ -321,7 +345,9 @@
             <br />
             <a
               href="https://www.pkv-ombudsmann.de"
-              title="pkv-ombudsmann.de aufrufen">
+              title="pkv-ombudsmann.de aufrufen"
+              target="_blank"
+              rel="noopener noreferrer">
               www.pkv-ombudsmann.de
             </a>
           </p>
@@ -337,7 +363,8 @@
             <a
               href="https:/ec.europa.eu/consumers/odr/"
               title="ec.europa.eu/consumers/odr/ aufrufen"
-              rel="nofollow">
+              target="_blank"
+              rel="noopener noreferrer">
               https:/ec.europa.eu/consumers/odr/
             </a>
           </p>
@@ -352,7 +379,9 @@
             Die berufsrechtlichen Regelungen können im Internet unter
             <a
               href="https://www.gesetze-im-internet.de"
-              title="gesetze-im-internet.de aufrufen">
+              title="gesetze-im-internet.de aufrufen"
+              target="_blank"
+              rel="noopener noreferrer">
               www.gesetze-im-internet.de
             </a>
             eingesehen werden.
@@ -368,7 +397,12 @@
       <br />
       <p>
         Die auf dieser Website verwendeten Bilder stammen von
-        <a href="https://unsplash.com/" title="unsplash.com" class="underline">
+        <a
+          href="https://unsplash.com/"
+          title="unsplash.com"
+          class="underline"
+          target="_blank"
+          rel="noopener noreferrer">
           unsplash.com
         </a>
         und sind Eigentum der folgenden Fotografen:

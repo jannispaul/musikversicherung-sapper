@@ -130,7 +130,7 @@
 </script>
 
 <svelte:head>
-  <title>Anfrage</title>
+  <title>Instrumentenversicherung – Schaden melden</title>
 </svelte:head>
 <svelte:window bind:scrollY={scrollPositionY} />
 

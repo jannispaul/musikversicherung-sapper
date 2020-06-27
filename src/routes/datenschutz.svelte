@@ -511,7 +511,9 @@
         Datenschutzerklärung des Anbieters unter:
         <a
           href="https://www.google.de/intl/de/policies/privacy/"
-          title="Google Datenschutzerklärung aufrufen">
+          title="Google Datenschutzerklärung aufrufen"
+          target="_blank"
+          rel="noopener noreferrer">
           https://www.google.de/intl/de/policies/privacy/
         </a>
       </p>
@@ -524,7 +526,9 @@
         Weitere Informationen zum Datenschutz bei Integromat finden Sie unter:{' '}
         <a
           href="https://support.integromat.com/hc/en-us/articles/360001988174"
-          title="Integromat Datenschutzerklärung aufrufen">
+          title="Integromat Datenschutzerklärung aufrufen"
+          target="_blank"
+          rel="noopener noreferrer">
           https://support.integromat.com/hc/en-us/articles/360001988174
         </a>
         .
@@ -537,7 +541,9 @@
         Weitere Informationen zum Datenschutz bei Formbackend finden Sie unter:{' '}
         <a
           href="https://www.formbackend.com/privacy"
-          title="Formbackend Datenschutzerklärung aufrufen">
+          title="Formbackend Datenschutzerklärung aufrufen"
+          target="_blank"
+          rel="noopener noreferrer">
           https://www.formbackend.com/privacy
         </a>
         .

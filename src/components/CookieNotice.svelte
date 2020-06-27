@@ -54,7 +54,13 @@
       Cookies helfen uns bei der Bereitstellung unserer Inhalte und Dienste.
       Durch die weitere Nutzung der Webseite stimmst Du der Verwendung von
       Cookies und Google Analytics zu.
-      <a rel="prefetch" href="/datenschutz" class="underline">Mehr erfahren</a>
+      <a
+        rel="prefetch"
+        href="/datenschutz"
+        title="Datenschutzerklärung aufrufen"
+        class="underline">
+        Mehr erfahren
+      </a>
     </p>
     <button
       on:click={acceptCookies}

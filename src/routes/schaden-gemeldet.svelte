@@ -2,9 +2,6 @@
   import Layout from "./_layouts/layout.svelte";
 </script>
 
-<!-- <svelte:head>
-  <meta name="robots" content="noindex" />
-</svelte:head> -->
 <Layout>
   <section class="px-x1p5 mb-x1 text-x2 md:text-x0p75" id="main">
     <div class="grid md:grid-cols-2 gap-x2 md:gap-x1">

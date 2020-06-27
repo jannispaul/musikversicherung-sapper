@@ -10,12 +10,14 @@
     <div class="flex-1 flex flex-col md:flex-row space-between">
       <a
         href="tel:+4951919313199"
-        class="flex-1 hover:underline mb-x0p5 md:mb-0">
+        class="flex-1 hover:underline mb-x0p5 md:mb-0"
+        title="B!-Das Versicherungsbüro anrufen">
         Tel.: +49 5191 931 31 99
       </a>
       <a
         href="tel:+491725113611"
-        class="flex-1 hover:underline mb-x0p5 md:mb-0">
+        class="flex-1 hover:underline mb-x0p5 md:mb-0"
+        title="B!-Das Versicherungsbüro mobile anrufen">
         Mobil: +49 172 511 3611
       </a>
     </div>
@@ -28,7 +30,6 @@
   </div>
   <hr class="border-t md:border-t-x0p1 border-primary mb-x1 md:mb-x0p5" />
   <div class="flex flex-col md:flex-row items-stretch mb-x1 md:mb-x0p5 ">
-
     <p class="flex-1 wrap">
       Heiner Blaskewitz
       <br />
@@ -49,9 +50,19 @@
   <hr class="border-t md:border-t-x0p1 border-primary mb-x1 md:mb-x0p5" />
   <div class="md:flex mb-x1 md:mb-x0p5">
     <nav class="flex-1 mb-x0p5 md:mb-0">
-      <a rel="prefetch" href="/impressum" class="hover:underline ">Impressum</a>
+      <a
+        rel="prefetch"
+        href="/impressum"
+        title="Impressum aufrufen"
+        class="hover:underline">
+        Impressum
+      </a>
       &nbsp; · &nbsp;
-      <a rel="prefetch" href="/datenschutz" class="hover:underline ">
+      <a
+        rel="prefetch"
+        href="/datenschutz"
+        title="Datenschutz aufrufen"
+        class="hover:underline">
         Datenschutz
       </a>
       &nbsp; · &nbsp;
@@ -63,13 +74,15 @@
       <a
         rel="prefetch"
         href="/versicherungsbedingungen"
+        title="Versicherungsbedingungen aufrufen"
         class="hover:underline mb-x0p5 md:mb-0">
         Versicherungsbedingungen
       </a>
       &nbsp; · &nbsp;
       <a
         href="https://musikversicherung.com/Beschwerdeverfahren.pdf"
-        class="hover:underline mb-x0p5 md:mb-0">
+        class="hover:underline mb-x0p5 md:mb-0"
+        title="Beschwerden-Seite aufrufen">
         Beschwerden
       </a>
 
