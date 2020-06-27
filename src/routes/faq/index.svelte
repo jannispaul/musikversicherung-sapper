@@ -14,6 +14,14 @@
   export let faq;
 </script>
 
+<svelte:head>
+  <title>Instrumentenversicherung – FAQ – Häufig gestellte Fragen</title>
+  <meta
+    name="description"
+    content="Musikinstrumente, Equipment und Zubehör einfach online versichern
+    ✅ weltweiter Schutz ✅ auch im Auto ✅ kostenlose, individuelle Beratung
+    vom Experten" />
+</svelte:head>
 <Layout>
   <section class="px-x1p5" itemscope itemtype="https://schema.org/FAQPage">
     <h1 class="text-primary text-x6 leading-tight mb-x2 border-solid">

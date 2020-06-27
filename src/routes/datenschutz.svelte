@@ -2,10 +2,9 @@
   import Layout from "./_layouts/layout.svelte";
 </script>
 
-<!-- <svelte:head>
-  <meta name="robots" content="noindex" />
-</svelte:head> -->
-
+<svelte:head>
+  <title>Instrumentenversicherung - Datenschutz</title>
+</svelte:head>
 <Layout>
   <section class="px-x1p5 mb-x1 text-x2 md:text-x0p75">
     <h1 class="text-primary text-x6 md:text-x3 mb-x1 ">Datenschutz</h1>

@@ -43,12 +43,12 @@
 </script>
 
 <svelte:head>
-  <title>Instrumentenversicherung SINFONIMA & I'M SOUND</title>
+  <title>Instrumentenversicherung mit All-Risk-Schutz schon ab 4,69 €</title>
   <meta
     name="description"
-    content="SINFONIMA-Instrumentenversicherung & I'M
-    SOUND-Equipmentversicherung - bester Allgefahrenschutz für klassische
-    Instrumente und elektronisches Equipment" />
+    content="Musikinstrumente, Equipment und Zubehör einfach online versichern
+    ✅ weltweiter Schutz ✅ auch im Auto ✅ kostenlose, individuelle Beratung
+    vom Experten" />
 </svelte:head>
 <Layout>
   <Hero {reviewData} />
