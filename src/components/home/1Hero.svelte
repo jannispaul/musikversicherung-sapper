@@ -144,10 +144,9 @@
     <h1
       class="text-white text-x7 md:text-x3 mb-x1 leading-tighter font-medium
       block md:mb-x1 ">
-      Deine Versicherung für
-      <span class="">Instrumente</span>
-      und
-      <span class="">Equipment</span>
+      Instrumentenversicherung
+      <br />
+      – auch für Equipment
     </h1>
 
     <a
