@@ -39,7 +39,8 @@
     <a
       href="/anfrage"
       class="text-white bg-primary py-x0p75 px-x1 w-full block text-center
-      md:inline-block md:w-auto md:px-x0p25 md:py-x0p25 hover:bg-primary-dark">
+      md:inline-block md:w-auto md:px-x0p25 md:py-x0p25 hover:bg-primary-dark"
+      title="Angebot anfragen">
       Jetzt anfragen
     </a>
   </div>

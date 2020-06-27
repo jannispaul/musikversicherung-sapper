@@ -153,7 +153,8 @@
       href="/anfrage"
       class="inline-block text-white hover:underline text-x2 md:text-x0p25
       bg-secondary p-x1 md:py-x0p25 md:px-x0p5 mb-x2 md:mb-0 md:inline-flex
-      hover:bg-secondary-dark mx-auto">
+      hover:bg-secondary-dark mx-auto"
+      title="Angebot anfragen">
       Jetzt anfragen
     </a>
 
