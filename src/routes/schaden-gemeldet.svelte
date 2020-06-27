@@ -19,12 +19,20 @@
           erhalten. Falls jedoch keine E-Mail bei Dir ankommt, überprüfe bitte
           Deinen Spamfilter. Falls auch dort keine E-Mail vorhanden ist, nimm
           bitte direkten Kontakt zu mir auf:
-          <a href="mailto:info@musikversicherung.com" class="underline">
+          <a
+            href="mailto:info@musikversicherung.com"
+            title="E-Mail an info@musikversicherung.com schreiben"
+            class="underline">
             info@musikversicherung.com
           </a>
           oder
           <br />
-          <a href="tel:+4951919313199" class="underline">+49 5191 931 31 99</a>
+          <a
+            href="tel:+4951919313199"
+            class="underline"
+            title="B!-Das Versicherungsbüro anrufen">
+            +49 5191 931 31 99
+          </a>
 
         </p>
       </div>

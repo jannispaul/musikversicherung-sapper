@@ -19,7 +19,10 @@
         Mobil: +49 172 511 3611
       </a>
     </div>
-    <a href="mailto:info@musikversicherung.com" class="flex-1 hover:underline">
+    <a
+      href="mailto:info@musikversicherung.com"
+      title="E-Mail an info@musikversicherung.com schreiben"
+      class="flex-1 hover:underline">
       info@musikversicherung.com
     </a>
   </div>
@@ -52,7 +55,9 @@
         Datenschutz
       </a>
       &nbsp; · &nbsp;
-      <a href="/sitemap.xml" class="hover:underline ">Sitemap</a>
+      <a href="/sitemap.xml" title="Sitemap öffnen" class="hover:underline ">
+        Sitemap
+      </a>
     </nav>
     <div class="flex-1">
       <a

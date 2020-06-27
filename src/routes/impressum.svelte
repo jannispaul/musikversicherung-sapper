@@ -20,9 +20,15 @@
     B! - Das Versicherungsbüro Generalagentur der Mannheimer Versicherungen 
     <br />
     Mobil
-    <a href="tel:+491725113611">0172 5113 611</a>
+    <a href="tel:+491725113611" title="B!-Das Versicherungsbüro anrufen">
+      0172 5113 611
+    </a>
     <br />
-    <a href="mailto:heiner@blaskewitz.com">heiner@blaskewitz.com</a>
+    <a
+      href="mailto:heiner@blaskewitz.com"
+      title="E-Mail an heiner@blaskewitz.com schreiben">
+      heiner@blaskewitz.com
+    </a>
     <br />
     Bahnhofstr. 35
     <br />
@@ -47,7 +53,11 @@
             5191-9739026
             <br />
             Mobil: +49 172-5113611, Mail:&nbsp;
-            <a href="mailto:heiner@blaskewitz.com">heiner@blaskewitz.com</a>
+            <a
+              href="mailto:heiner@blaskewitz.com"
+              title="E-Mail an heiner@blaskewitz.com schreiben">
+              heiner@blaskewitz.com
+            </a>
           </p>
           <br />
           <p>Angaben zum VERMITTLERREGISTER:</p>
@@ -64,16 +74,22 @@
             höchstens 0,60 EUR/Anruf aus Mobilfunknetzen)
             <br />
             Fax: 0 30.2 03 08-10 00, E-Mail:
-            <a href="mailto:vr@dihk.de?subject=Vermittlerregister.info">
+            <a
+              href="mailto:vr@dihk.de?subject=Vermittlerregister.info"
+              title="E-Mail an vr@dihk.de schreiben">
               vr@dihk.de
             </a>
             <br />
             Internet:
-            <a href="https://www.vermittlerregister.info">
+            <a
+              href="https://www.vermittlerregister.info"
+              title="Vermittlerregister aufrufen">
               https://www.vermittlerregister.info
             </a>
             oder
-            <a href="https://www.vermittlerregister.org">
+            <a
+              href="https://www.vermittlerregister.org"
+              title="Vermittlerregister aufrufen">
               https://www.vermittlerregister.org
             </a>
           </p>
@@ -95,9 +111,15 @@
             Tel.: 06 21. 4 57 80 00, Telefax: 06 21. 4 57 80 08,
             <br />
             E-Mail:
-            <a href="mailto:service@mannheimer.de">service@mannheimer.de</a>
+            <a
+              href="mailto:service@mannheimer.de"
+              title="E-Mail an service@mannheimer.de schreiben">
+              service@mannheimer.de
+            </a>
             , Internet:
-            <a href="https://www.mannheimer.de">https://www.mannheimer.de</a>
+            <a href="https://www.mannheimer.de" title="Mannheimer.de aufrufen">
+              https://www.mannheimer.de
+            </a>
           </p>
           <p>
             <b>
@@ -117,9 +139,15 @@
               Tel.: 02 31. 9 19-0, Telefax: 02 31. 91 9-29 13,
               <br />
               E-Mail:
-              <a href="mailto:info@continentale.de">info@continentale.de</a>
+              <a
+                href="mailto:info@continentale.de"
+                title="E-Mail an info@continentale.de schreiben">
+                info@continentale.de
+              </a>
               , Internet:
-              <a href="https://www.continentale.de">
+              <a
+                href="https://www.continentale.de"
+                title="continentale.de aufrufen">
                 https://www.continentale.de
               </a>
             </li>
@@ -137,9 +165,15 @@
               Tel.: 0 89. 51 53-0, Fax 0 89. 51 53-20 0,
               <br />
               E-Mail:
-              <a href="mailto:info@continentale.de">info@continentale.de</a>
+              <a
+                href="mailto:info@continentale.de"
+                title="E-Mail an info@continentale.de schreiben">
+                info@continentale.de
+              </a>
               , Internet:
-              <a href="https://www.continentale.de">
+              <a
+                href="https://www.continentale.de"
+                title="continentale.de aufrufen">
                 https://www.continentale.de
               </a>
             </li>
@@ -156,9 +190,15 @@
               Tel.: 02 31. 91 9-0, Telefax: 02 31. 91 9-29 13,
               <br />
               E-Mail:
-              <a href="mailto:info@continentale.de">info@continentale.de</a>
+              <a
+                href="mailto:info@continentale.de"
+                title="E-Mail an info@continentale.de schreiben">
+                info@continentale.de
+              </a>
               , Internet:
-              <a href="https://www.continentale.de">
+              <a
+                href="https://www.continentale.de"
+                title="continentale.de aufrufen">
                 https://www.continentale.de
               </a>
             </li>
@@ -175,9 +215,15 @@
               Tel.: 02 21. 57 37-2 00, Telefax: 02 21. 57 37-2 33
               <br />
               E-Mail:
-              <a href="mailto:info@europa.de">info@europa.de</a>
+              <a
+                href="mailto:info@europa.de"
+                title="E-Mail an info@europa.de schreiben">
+                info@europa.de
+              </a>
               , Internet:
-              <a href="https://www.europa.de/">https://www.europa.de/</a>
+              <a href="https://www.europa.de/" title="europa.de aufrufen">
+                https://www.europa.de/
+              </a>
             </li>
           </ul>
           <br />
@@ -192,11 +238,15 @@
               Tel.: 06 21. 42 04-0, Telefax: 06 21. 42 04 65 0,
               <br />
               E-Mail:
-              <a href="mailto:nrv@nrv-rechtsschutz.de">
+              <a
+                href="mailto:nrv@nrv-rechtsschutz.de"
+                title="E-Mail an nrv@nrv-rechtsschutz.de schreiben">
                 nrv@nrv-rechtsschutz.de
               </a>
               , Internet:
-              <a href="https://www.nrv-rechtsschutz.de">
+              <a
+                href="https://www.nrv-rechtsschutz.de"
+                title="nrv-rechtsschutz.de aufrufen">
                 https://www.nrv-rechtsschutz.de
               </a>
             </li>
@@ -252,7 +302,9 @@
             <br />
             10006 Berlin
             <br />
-            <a href="https://www.versicherungsombudmann.de">
+            <a
+              href="https://www.versicherungsombudmann.de"
+              title="versicherungsombudmann.de aufrufen">
               www.versicherungsombudsmann.de
             </a>
           </p>
@@ -267,7 +319,11 @@
             <br />
             10052 Berlin
             <br />
-            <a href="https://www.pkv-ombudsmann.de">www.pkv-ombudsmann.de</a>
+            <a
+              href="https://www.pkv-ombudsmann.de"
+              title="pkv-ombudsmann.de aufrufen">
+              www.pkv-ombudsmann.de
+            </a>
           </p>
           <br />
           <p>
@@ -278,7 +334,10 @@
             zuständigen Ombudsmann erfolgt).
           </p>
           <p>
-            <a href="https:/ec.europa.eu/consumers/odr/" rel="nofollow">
+            <a
+              href="https:/ec.europa.eu/consumers/odr/"
+              title="ec.europa.eu/consumers/odr/ aufrufen"
+              rel="nofollow">
               https:/ec.europa.eu/consumers/odr/
             </a>
           </p>
@@ -291,7 +350,9 @@
           </ul>
           <p>
             Die berufsrechtlichen Regelungen können im Internet unter
-            <a href="https://www.gesetze-im-internet.de">
+            <a
+              href="https://www.gesetze-im-internet.de"
+              title="gesetze-im-internet.de aufrufen">
               www.gesetze-im-internet.de
             </a>
             eingesehen werden.
@@ -307,7 +368,9 @@
       <br />
       <p>
         Die auf dieser Website verwendeten Bilder stammen von
-        <a href="https://unsplash.com/" class="underline">unsplash.com</a>
+        <a href="https://unsplash.com/" title="unsplash.com" class="underline">
+          unsplash.com
+        </a>
         und sind Eigentum der folgenden Fotografen:
         <br />
         Martin Hexeberg

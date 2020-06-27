@@ -442,7 +442,11 @@
         Zusätzlich oder als Alternative zum Browser-Add-On können Sie das
         Tracking durch Google Analytics auf unseren Seiten unterbinden, indem
         Sie diesen Link anklicken:&nbsp;
-        <a href="/" data-ua="UA-99324592-X" class="gaoptout">
+        <a
+          href="/"
+          data-ua="UA-99324592-X"
+          title="Google Analytics deaktivieren"
+          class="gaoptout">
           Google Analytics deaktivieren
         </a>
         . Dabei wird ein Opt-Out-Cookie auf Ihrem Gerät installiert. Damit wird
@@ -505,7 +509,9 @@
       <p>
         Weitere Informationen zum Datenschutz bei „Youtube“ finden Sie in der
         Datenschutzerklärung des Anbieters unter:
-        <a href="https://www.google.de/intl/de/policies/privacy/">
+        <a
+          href="https://www.google.de/intl/de/policies/privacy/"
+          title="Google Datenschutzerklärung aufrufen">
           https://www.google.de/intl/de/policies/privacy/
         </a>
       </p>
@@ -516,7 +522,9 @@
         wir Integromat, einen Dienst von Integromat s.r.o., Novakovych 1954/20a
         180 00 Prag 8, Tschechien. Dabei können Kundendaten übermittelt werden.
         Weitere Informationen zum Datenschutz bei Integromat finden Sie unter:{' '}
-        <a href="https://support.integromat.com/hc/en-us/articles/360001988174">
+        <a
+          href="https://support.integromat.com/hc/en-us/articles/360001988174"
+          title="Integromat Datenschutzerklärung aufrufen">
           https://support.integromat.com/hc/en-us/articles/360001988174
         </a>
         .
@@ -527,7 +535,9 @@
         Zur Übermittlung und automatisierten Beantwortung Ihrer Schadensanfragen
         nutzen wir Formbackend. Dabei können Kundendaten übermittelt werden.
         Weitere Informationen zum Datenschutz bei Formbackend finden Sie unter:{' '}
-        <a href="https://www.formbackend.com/privacy">
+        <a
+          href="https://www.formbackend.com/privacy"
+          title="Formbackend Datenschutzerklärung aufrufen">
           https://www.formbackend.com/privacy
         </a>
         .

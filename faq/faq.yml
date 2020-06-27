@@ -3,7 +3,7 @@ faq10:
   answer: "Versicherungsschutz gilt weltweit."
 faq13:
   question: "Was ist bei Auslandsreien zu beachten?"
-  answer: "Dazu haben wir <a href='https://musikversicherung.com/Empfehlungen-zu-Auslandsreisen.pdf' class='underline' target='_blank' rel='noopener noreferrer'>diesen Ratgeber</a>."
+  answer: "Dazu haben wir <a href='https://musikversicherung.com/Empfehlungen-zu-Auslandsreisen.pdf' title='Empfehlungen zu Auslandsreisen lesen' class='underline' target='_blank' rel='noopener noreferrer'>diesen Ratgeber</a>."
 faq12:
   question: "Ist mein Instrument auch versichert, wenn ich es verleihe?"
   answer: "Ja."
