@@ -75,7 +75,7 @@
     bg-primary-light p-x1p5 md:px-x1p5 md:py-x0p25 md:flex z-10 text-x2
     md:text-x0p5 lg:text-x0p25">
     <p class="text-center block text-primary">
-      Unser Geschenk für Dich bis 30. Juni: 10 % Sonderrabatt!
+      Aktuell gibt es 10 % Sonderrabatt auf alle Beiträge!
     </p>
     <div
       on:click={hideNotice}
