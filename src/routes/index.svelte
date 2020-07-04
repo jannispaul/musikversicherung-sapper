@@ -43,7 +43,7 @@
 </script>
 
 <svelte:head>
-  <title>Instrumentenversicherung mit All-Risk-Schutz schon ab 4,69 €</title>
+  <title>Instrumentenversicherung mit All-Risk-Schutz schon ab 4,22 €</title>
   <meta
     name="description"
     content="Musikinstrumente, Equipment und Zubehör einfach online versichern
