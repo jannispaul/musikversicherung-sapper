@@ -25,6 +25,44 @@
   import InstrumentsAndMore from "../components/home/8InstrumentsAndMore.svelte";
   import Various from "../components/home/10Various.svelte";
   import Video from "../components/home/11Video.svelte";
+  let reviewsJSON = reviewData.allReviews.map(review => ({
+    "@type": "Review",
+    author: {
+      "@type": "Person",
+      name: review.name
+    },
+    datePublished: review.microDataDate,
+    reviewBody: review.review,
+    reviewRating: {
+      "@type": "Rating",
+      bestRating: "5",
+      ratingValue: review.rating,
+      worstRating: "1"
+    }
+  }));
+
+  // Aggregated Rating
+  let jsonLD = {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    image: "https://musikversicherung.com/social-image.jpg",
+    name: "SINFONIMA / I'M SOUND Instrumentenversicherung",
+    brand: {
+      "@type": "Brand",
+      name: "Mannheimer Versicherung AG"
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: reviewData.averageRating,
+      reviewCount: reviewData.count
+    },
+    review: reviewsJSON,
+    description: "Deine Versicherung für Instrumente und Equipment."
+  };
+  // JSON LD in script tag
+  let scriptTag = `<script type="application/ld+json">${JSON.stringify(
+    jsonLD
+  )}<\/script>`;
 
   let content1 = {
     headline: "Weit mehr als nur eine Hausratdeckung",
@@ -43,6 +81,7 @@
 </script>
 
 <svelte:head>
+  {@html scriptTag}
   <title>Instrumentenversicherung mit All-Risk-Schutz schon ab 4,22 €</title>
   <meta
     name="description"
@@ -50,6 +89,7 @@
     ✅ weltweiter Schutz ✅ auch im Auto ✅ kostenlose, individuelle Beratung
     vom Experten" />
 </svelte:head>
+
 <Layout>
   <Hero {reviewData} />
 
