@@ -14,7 +14,6 @@
 </svelte:head>
 
 <h1>{status}</h1>
-test
 <p>{error.message}</p>
 
 {#if dev && error.stack}
