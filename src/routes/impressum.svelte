@@ -39,7 +39,17 @@
     Fax: 05191 - 9739026
     <br />
     <br />
-
+    <p>Design und Entwicklung:</p>
+    <p>
+      <a
+        href="https://pixel-pink.de/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline">
+        PixelPink Designstudio Berlin
+      </a>
+    </p>
+    <br />
     <div>
       <div>
         <div>
