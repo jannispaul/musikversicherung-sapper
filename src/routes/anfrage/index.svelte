@@ -94,14 +94,20 @@
       "https://hook.integromat.com/rv3r5iqg3ivce8h16ld3b3v5h3vs9121",
       requestOptions
     )
-      .then(response => response.text())
-      .catch(error => console.log("error", error));
-
-    // Remove formData from localstorage so form is empty
-    localStorage.removeItem("formData");
-
-    // Redirect to danke page
-    window.location.href = "/danke/";
+      .then(response => {
+        // If response is ok
+        if (response.ok) {
+          // redirect to schaden-gemeldet page and remove
+          window.location.href = "/danke/";
+          // Clear saved formdata from localstorage
+          localStorage.removeItem(formData);
+        }
+      })
+      // If there is an error log it to console and reidrect to fehler page
+      .catch(error => {
+        console.error("Error: ", error);
+        window.location.href = "/fehler/";
+      });
   }
 </script>
 
@@ -531,7 +537,9 @@
             <span class="">
               Ich akzeptiere die Übertragung und Speicherung meiner Daten zum
               Zwecke des angebotenen Services.
-              <a rel=prefetch href="/datenschutz" class="underline">Mehr erfahren</a>
+              <a rel="prefetch" href="/datenschutz" class="underline">
+                Mehr erfahren
+              </a>
             </span>
           </label>
 
@@ -738,7 +746,9 @@
             <span>
               Ich akzeptiere die Übertragung und Speicherung meiner Daten zum
               Zwecke des angebotenen Services.
-              <a rel=prefetch href="/datenschutz" class="underline">Mehr erfahren</a>
+              <a rel="prefetch" href="/datenschutz" class="underline">
+                Mehr erfahren
+              </a>
             </span>
           </label>
           {#if errors.tab2}
