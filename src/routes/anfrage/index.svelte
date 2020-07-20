@@ -149,7 +149,7 @@
   }
 
   :global(input) {
-    height: 5vw;
+    /* height: 5vw; */
     min-height: fit-content;
     padding: 1.5vw;
     margin-bottom: 4vw;
@@ -213,7 +213,7 @@
     }
     /* Input styles */
     :global(input) {
-      height: 2vw;
+      /* height: 2vw; */
       min-height: fit-content;
       padding: 0.75vw;
       margin-bottom: 2vw;
@@ -305,13 +305,15 @@
         </div>
         {#if $formData.versicherungsTyp == 'IAMSOUND'}
           <label class="flex flex-col">
-            Gesamtwert der Instrumente in € *
+            Gesamtwert der Instrumente in vollen Euro ohne Nachkommastellen *
             <input
               type="number"
               pattern="\d*"
               name="gesamtWert"
               bind:value={$formData.gesamtWert}
-              autofocus />
+              autofocus
+              min="0"
+              step="1" />
           </label>
         {/if}
       </div>
